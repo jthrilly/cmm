@@ -1,0 +1,24 @@
+{
+  "name": "www",
+  "version": "0.0.0",
+  "authors": [
+    "Joshua Melville <joshmelville@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "ratchet": "~2.0.2",
+    "chromata": "https://github.com/michaelbromley/chromata.git",
+    "swiper": "~3.0.8",
+    "fontawesome": "~4.3.0",
+    "moment": "~2.10.3",
+    "fastclick": "~1.0.6"
+  }
+}

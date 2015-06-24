@@ -1,0 +1,154 @@
+@import '../bower_components/bootstrap/less/bootstrap.less'; /* Compiled in Codekit - referenced here as a Framework */
+@import '../bower_components/fontawesome/less/font-awesome.less';
+@import 'variables.less'; /* Your site specific LESS variables - these override BS defaults  */
+@import (inline) '../bower_components/swiper/dist/css/swiper.min.css';
+
+@fa-font-path:        "../fonts";
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+@font-face {
+	font-family: 'Conv_NoMoRg__';
+	src: url('../fonts/NoMoRg__.eot');
+	src: local('☺'), url('../fonts/NoMoRg__.woff') format('woff'), url('../fonts/NoMoRg__.ttf') format('truetype'), url('../fonts/NoMoRg__.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_NoMoBd__';
+	src: url('fonts/NoMoBd__.eot');
+	src: local('☺'), url('../fonts/NoMoBd__.woff') format('woff'), url('../fonts/NoMoBd__.ttf') format('truetype'), url('../fonts/NoMoBd__.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    height:100vh;
+    overflow:hidden;
+    border:5.4vmin solid white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.swiper-container {
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.progress {
+	width:70vmin;
+}
+
+.row {
+    margin:0;
+	margin-bottom:5vmin;
+}
+
+.col-sm-12 {
+    padding-left: 8vmin;
+    padding-right: 8vmin;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+}
+
+h1.title-page {
+    font-size:14vmin;
+    font-weight:900;
+    letter-spacing: -3px;
+}
+
+.btn {
+    border-width:1vmin;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background:rgba(255,255,255,0.4);
+    border-color:#fff;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+}
+
+#bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes micPulse {
+    from { text-shadow: 0 0 0px transparent;  }
+    50% { text-shadow: 0 0 38px red;}
+    to { text-shadow: 0 0 0px transparent;}
+}
+
+@keyframes lightPulse {
+    from { text-shadow: 0 0 0px transparent;  }
+    50% { text-shadow: 0 0 38px red;}
+    to { text-shadow: 0 0 0px transparent;}
+}
+
+@keyframes textPulse {
+    from { opacity:0  }
+    50% { opacity:1 }
+    to { opacity:0 }
+}
+
+.fa-microphone {
+    font-size: 50vmin;
+    transition: all 1s ease-in-out;
+}
+
+.fa-microphone.recording {
+    color:red;
+
+}
+
+.recording-light {
+    transition: all 1s ease-in-out;
+    color:white;
+}
+
+.recording-controls {
+    padding-top:10vmin;
+}
+
+.recording-text {
+    transition: all 1s ease-in-out;
+    opacity:0;
+}
+
+.recording-text.recording {
+    opacity:1;
+}
+
+.recording-light.recording {
+    color:red;
+    animation-name: lightPulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}

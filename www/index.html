@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Unfinished Business</title>
+</head>
+<body>
+    <video autoplay loop id="bg" webkit-playsinline>
+        <source src="img/background.mp4" type="video/mp4">
+    </video>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h1 class="title-page">Change My Mind</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <button class="btn btn-primary start">Enter</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-sm-12">
+                        Slide 2
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <h4 class="recording-text">Recording...</h4>
+                </div>
+                <div class="row">
+                    <i class="fa fa-microphone"></i>
+                </div>
+                <div class="row">
+                    <span class="counter"><i class="fa fa-circle recording-light"></i> <span id="counter">00:00</span></span>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 recording-controls">
+                        <button class="btn btn-primary record"><i class="fa fa-circle"></i> Start</button>
+                        <button class="btn btn-primary stop"><i class="fa fa-stop"></i> Stop</button>
+                        <!-- <button class="btn btn-primary play">Play</button> -->
+                        <p id="audio_position"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button class="btn btn-primary play">Play</button>
+                        <button class="btn btn-primary upload">Upload</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/main-min.js"></script>
+    <script>
+// $(document).ready(function () {
+    var app = new App();
+    app.init();
+// });
+    </script>
+</body>
+</html>
