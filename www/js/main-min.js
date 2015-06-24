@@ -3210,7 +3210,7 @@ var App = function App() {
         fileSystem.root.getFile(recordingSrc, {
             create: true,
             exclusive: false
-        }, gotFileEntry, app.recordError);
+        }, gotFileEntry, app.error);
     }
 
     function gotFileEntry(fileEntry) {
@@ -3279,11 +3279,9 @@ var App = function App() {
     }
 
     app.uploadSuccess = function(r) {
-        alert(r.response);
         console.log("Code = " + r.responseCode);
         console.log("Response = " + r.response);
         console.log("Sent = " + r.bytesSent);
-
     };
 
     app.init = function() {
@@ -3322,9 +3320,6 @@ var App = function App() {
             }, 0);
         });
 
-        // Get the filesystem we will store the audio to
-
-
         // Fastclick removes click lag on buttons
         $(function () {
             FastClick.attach(document.body);
@@ -3345,7 +3340,7 @@ var App = function App() {
         if (recording === false) {
             recording = true;
             recordingSrc = "myrecording.m4a";
-            mediaRec = new Media(recordingSrc, app.recordSuccess, app.recordError);
+            mediaRec = new Media(recordingSrc, app.recordSuccess, app.error);
             // Record audio
             mediaRec.startRecord();
             mediaTimer = setInterval(function() {
@@ -3396,9 +3391,9 @@ var App = function App() {
         }, 1000);
     };
     app.recordSuccess = function() {
-        alert("Success!");
+        // alert("Success!");
     };
-    app.recordError = function(error) {
+    app.error = function(error) {
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     };
@@ -3408,7 +3403,7 @@ var App = function App() {
     };
     app.uploadRecording = function() {
         alert('uploadRecording');
-        window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, gotFS, app.recordError);
+        window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, gotFS, app.error);
     };
 
     return app;

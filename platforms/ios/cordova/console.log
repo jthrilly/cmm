@@ -188,3 +188,7 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 2015-06-24 19:03:44.549 Change My Mind[23157:1001213] File Transfer Finished with response code 200
 2015-06-24 19:09:06.918 Change My Mind[23157:1006829] File Transfer Finished with response code 200
 2015-06-24 19:09:30.349 Change My Mind[23157:1005139] File Transfer Finished with response code 200
+2015-06-24 19:11:26.706 Change My Mind[23157:993645] Playing audio sample 'myrecording.m4a'
+2015-06-24 19:11:26.714 Change My Mind[23157:993645] THREAD WARNING: ['Media'] took '15.245850' ms. Plugin should use a background thread.
+2015-06-24 19:12:11.240 Change My Mind[23157:1006829] File Transfer Finished with response code 200
+2015-06-24 19:12:58.115 Change My Mind[23157:993645] Finished playing audio sample 'myrecording.m4a'
