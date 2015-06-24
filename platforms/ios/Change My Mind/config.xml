@@ -44,6 +44,7 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="local" />
+    <preference name="exit-on-suspend" value="true" />
     <icon src="res/icon.png" />
     <content src="index.html" />
     <access origin="*" />

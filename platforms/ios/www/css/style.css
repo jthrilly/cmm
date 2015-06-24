@@ -1066,7 +1066,7 @@ html {
 }
 body {
   font-family: 'Conv_NoMoRg__', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.42857143;
   color: #ffffff;
   background-color: #000000;
@@ -1127,8 +1127,8 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 7vmin;
-  margin-bottom: 7vmin;
+  margin-top: 5vmin;
+  margin-bottom: 5vmin;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -1205,8 +1205,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 7vmin;
-  margin-bottom: 3.5vmin;
+  margin-top: 5vmin;
+  margin-bottom: 2.5vmin;
 }
 h1 small,
 .h1 small,
@@ -1228,8 +1228,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 3.5vmin;
-  margin-bottom: 3.5vmin;
+  margin-top: 2.5vmin;
+  margin-bottom: 2.5vmin;
 }
 h4 small,
 .h4 small,
@@ -1247,40 +1247,40 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 13vmin;
+  font-size: 10vmin;
 }
 h2,
 .h2 {
-  font-size: 10vmin;
+  font-size: 8vmin;
 }
 h3,
 .h3 {
-  font-size: 9vmin;
+  font-size: 7vmin;
 }
 h4,
 .h4 {
-  font-size: 7vmin;
+  font-size: 5vmin;
 }
 h5,
 .h5 {
-  font-size: 5vmin;
+  font-size: 4vmin;
 }
 h6,
 .h6 {
-  font-size: 5vmin;
+  font-size: 4vmin;
 }
 p {
-  margin: 0 0 3.5vmin;
+  margin: 0 0 2.5vmin;
 }
 .lead {
-  margin-bottom: 7vmin;
-  font-size: 5vmin;
+  margin-bottom: 5vmin;
+  font-size: 4vmin;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 7.5vmin;
+    font-size: 6vmin;
   }
 }
 small,
@@ -1381,14 +1381,14 @@ a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 .page-header {
-  padding-bottom: 2.5vmin;
-  margin: 14vmin 0 7vmin;
+  padding-bottom: 1.5vmin;
+  margin: 10vmin 0 5vmin;
   border-bottom: 1px solid #eeeeee;
 }
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 3.5vmin;
+  margin-bottom: 2.5vmin;
 }
 ul ul,
 ol ul,
@@ -1412,7 +1412,7 @@ ol ol {
 }
 dl {
   margin-top: 0;
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
 }
 dt,
 dd {
@@ -1448,9 +1448,9 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 3.5vmin 7vmin;
-  margin: 0 0 7vmin;
-  font-size: 6.25vmin;
+  padding: 2.5vmin 5vmin;
+  margin: 0 0 5vmin;
+  font-size: 5vmin;
   border-left: 5px solid #eeeeee;
 }
 blockquote p:last-child,
@@ -1496,7 +1496,7 @@ blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
 address {
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
   font-style: normal;
   line-height: 1.42857143;
 }
@@ -1529,9 +1529,9 @@ kbd kbd {
 }
 pre {
   display: block;
-  padding: 3vmin;
-  margin: 0 0 3.5vmin;
-  font-size: 4vmin;
+  padding: 2vmin;
+  margin: 0 0 2.5vmin;
+  font-size: 3vmin;
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
@@ -2234,7 +2234,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -2417,7 +2417,7 @@ table th[class*="col-"] {
 @media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
-    margin-bottom: 5.25vmin;
+    margin-bottom: 3.75vmin;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #dddddd;
@@ -2469,8 +2469,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 7vmin;
-  font-size: 7.5vmin;
+  margin-bottom: 5vmin;
+  font-size: 6vmin;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -2512,16 +2512,16 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 3vmin;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.42857143;
   color: #555555;
 }
 .form-control {
   display: block;
   width: 100%;
-  height: 13vmin;
+  height: 11vmin;
   padding: 2vmin 4vmin;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.42857143;
   color: #555555;
   background-color: #ffffff;
@@ -2568,7 +2568,7 @@ input[type="search"] {
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    line-height: 13vmin;
+    line-height: 11vmin;
   }
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -2578,7 +2578,7 @@ input[type="search"] {
   .input-group-sm input[type="time"],
   .input-group-sm input[type="datetime-local"],
   .input-group-sm input[type="month"] {
-    line-height: 19vmin;
+    line-height: 18vmin;
   }
   input[type="date"].input-lg,
   input[type="time"].input-lg,
@@ -2588,7 +2588,7 @@ input[type="search"] {
   .input-group-lg input[type="time"],
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
-    line-height: 32vmin;
+    line-height: 29vmin;
   }
 }
 .form-group {
@@ -2603,7 +2603,7 @@ input[type="search"] {
 }
 .radio label,
 .checkbox label {
-  min-height: 7vmin;
+  min-height: 5vmin;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -2660,7 +2660,7 @@ fieldset[disabled] .checkbox label {
   padding-top: 3vmin;
   padding-bottom: 3vmin;
   margin-bottom: 0;
-  min-height: 12vmin;
+  min-height: 9vmin;
 }
 .form-control-static.input-lg,
 .form-control-static.input-sm {
@@ -2668,84 +2668,84 @@ fieldset[disabled] .checkbox label {
   padding-right: 0;
 }
 .input-sm {
-  height: 19vmin;
+  height: 18vmin;
   padding: 5px 10px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.5;
   border-radius: 3px;
 }
 select.input-sm {
-  height: 19vmin;
-  line-height: 19vmin;
+  height: 18vmin;
+  line-height: 18vmin;
 }
 textarea.input-sm,
 select[multiple].input-sm {
   height: auto;
 }
 .form-group-sm .form-control {
-  height: 19vmin;
+  height: 18vmin;
   padding: 5px 10px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.5;
   border-radius: 3px;
 }
 select.form-group-sm .form-control {
-  height: 19vmin;
-  line-height: 19vmin;
+  height: 18vmin;
+  line-height: 18vmin;
 }
 textarea.form-group-sm .form-control,
 select[multiple].form-group-sm .form-control {
   height: auto;
 }
 .form-group-sm .form-control-static {
-  height: 19vmin;
+  height: 18vmin;
   padding: 5px 10px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.5;
-  min-height: 12vmin;
+  min-height: 9vmin;
 }
 .input-lg {
-  height: 32vmin;
+  height: 29vmin;
   padding: 10px 16px;
-  font-size: 7vmin;
+  font-size: 5vmin;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 select.input-lg {
-  height: 32vmin;
-  line-height: 32vmin;
+  height: 29vmin;
+  line-height: 29vmin;
 }
 textarea.input-lg,
 select[multiple].input-lg {
   height: auto;
 }
 .form-group-lg .form-control {
-  height: 32vmin;
+  height: 29vmin;
   padding: 10px 16px;
-  font-size: 7vmin;
+  font-size: 5vmin;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 select.form-group-lg .form-control {
-  height: 32vmin;
-  line-height: 32vmin;
+  height: 29vmin;
+  line-height: 29vmin;
 }
 textarea.form-group-lg .form-control,
 select[multiple].form-group-lg .form-control {
   height: auto;
 }
 .form-group-lg .form-control-static {
-  height: 32vmin;
+  height: 29vmin;
   padding: 10px 16px;
-  font-size: 7vmin;
+  font-size: 5vmin;
   line-height: 1.3333333;
-  min-height: 14vmin;
+  min-height: 10vmin;
 }
 .has-feedback {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 16.25vmin;
+  padding-right: 13.75vmin;
 }
 .form-control-feedback {
   position: absolute;
@@ -2753,21 +2753,21 @@ select[multiple].form-group-lg .form-control {
   right: 0;
   z-index: 2;
   display: block;
-  width: 13vmin;
-  height: 13vmin;
-  line-height: 13vmin;
+  width: 11vmin;
+  height: 11vmin;
+  line-height: 11vmin;
   text-align: center;
   pointer-events: none;
 }
 .input-lg + .form-control-feedback {
-  width: 32vmin;
-  height: 32vmin;
-  line-height: 32vmin;
+  width: 29vmin;
+  height: 29vmin;
+  line-height: 29vmin;
 }
 .input-sm + .form-control-feedback {
-  width: 19vmin;
-  height: 19vmin;
-  line-height: 19vmin;
+  width: 18vmin;
+  height: 18vmin;
+  line-height: 18vmin;
 }
 .has-success .help-block,
 .has-success .control-label,
@@ -2854,7 +2854,7 @@ select[multiple].form-group-lg .form-control {
   color: #a94442;
 }
 .has-feedback label ~ .form-control-feedback {
-  top: 12vmin;
+  top: 10vmin;
 }
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0;
@@ -2925,7 +2925,7 @@ select[multiple].form-group-lg .form-control {
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 10vmin;
+  min-height: 8vmin;
 }
 .form-horizontal .form-group {
   margin-left: -45px;
@@ -2964,7 +2964,7 @@ select[multiple].form-group-lg .form-control {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 2vmin 4vmin;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.42857143;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -3308,21 +3308,21 @@ fieldset[disabled] .btn-link:focus {
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 10px 16px;
-  font-size: 7vmin;
+  font-size: 5vmin;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 5px 10px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.5;
   border-radius: 3px;
 }
 .btn-xs,
 .btn-group-xs > .btn {
   padding: 1px 5px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -3397,7 +3397,7 @@ tbody.collapse.in {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 5vmin;
+  font-size: 4vmin;
   text-align: left;
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -3412,7 +3412,7 @@ tbody.collapse.in {
 }
 .dropdown-menu .divider {
   height: 1px;
-  margin: 2.5vmin 0;
+  margin: 1.5vmin 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -3469,7 +3469,7 @@ tbody.collapse.in {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.42857143;
   color: #777777;
   white-space: nowrap;
@@ -3694,17 +3694,17 @@ tbody.collapse.in {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 32vmin;
+  height: 29vmin;
   padding: 10px 16px;
-  font-size: 7vmin;
+  font-size: 5vmin;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 32vmin;
-  line-height: 32vmin;
+  height: 29vmin;
+  line-height: 29vmin;
 }
 textarea.input-group-lg > .form-control,
 textarea.input-group-lg > .input-group-addon,
@@ -3717,17 +3717,17 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  height: 19vmin;
+  height: 18vmin;
   padding: 5px 10px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   line-height: 1.5;
   border-radius: 3px;
 }
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
 select.input-group-sm > .input-group-btn > .btn {
-  height: 19vmin;
-  line-height: 19vmin;
+  height: 18vmin;
+  line-height: 18vmin;
 }
 textarea.input-group-sm > .form-control,
 textarea.input-group-sm > .input-group-addon,
@@ -3755,7 +3755,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon {
   padding: 2vmin 4vmin;
-  font-size: 5vmin;
+  font-size: 4vmin;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -3766,12 +3766,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon.input-sm {
   padding: 5px 10px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   border-radius: 3px;
 }
 .input-group-addon.input-lg {
   padding: 10px 16px;
-  font-size: 7vmin;
+  font-size: 5vmin;
   border-radius: 6px;
 }
 .input-group-addon input[type="radio"],
@@ -3865,7 +3865,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav .nav-divider {
   height: 1px;
-  margin: 2.5vmin 0;
+  margin: 1.5vmin 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4023,7 +4023,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4128,9 +4128,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 21.5px 45px;
-  font-size: 7vmin;
-  line-height: 7vmin;
+  padding: 22.5px 45px;
+  font-size: 5vmin;
+  line-height: 5vmin;
   height: 50px;
 }
 .navbar-brand:hover,
@@ -4176,12 +4176,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 10.75px -45px;
+  margin: 11.25px -45px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 7vmin;
+  line-height: 5vmin;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4198,7 +4198,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 7vmin;
+    line-height: 5vmin;
   }
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4214,8 +4214,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 21.5px;
-    padding-bottom: 21.5px;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
   }
 }
 .navbar-form {
@@ -4225,8 +4225,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 18.5px;
-  margin-bottom: 18.5px;
+  margin-top: 19.5px;
+  margin-bottom: 19.5px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -4310,20 +4310,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 18.5px;
-  margin-bottom: 18.5px;
+  margin-top: 19.5px;
+  margin-bottom: 19.5px;
 }
 .navbar-btn.btn-sm {
-  margin-top: 15.5px;
-  margin-bottom: 15.5px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .navbar-btn.btn-xs {
   margin-top: 14px;
   margin-bottom: 14px;
 }
 .navbar-text {
-  margin-top: 21.5px;
-  margin-bottom: 21.5px;
+  margin-top: 22.5px;
+  margin-bottom: 22.5px;
 }
 @media (min-width: 768px) {
   .navbar-text {
@@ -4546,7 +4546,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px;
@@ -4565,7 +4565,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 7vmin 0;
+  margin: 5vmin 0;
   border-radius: 4px;
 }
 .pagination > li {
@@ -4628,7 +4628,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
-  font-size: 7vmin;
+  font-size: 5vmin;
 }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
@@ -4643,7 +4643,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
-  font-size: 5vmin;
+  font-size: 4vmin;
 }
 .pagination-sm > li:first-child > a,
 .pagination-sm > li:first-child > span {
@@ -4657,7 +4657,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pager {
   padding-left: 0;
-  margin: 7vmin 0;
+  margin: 5vmin 0;
   list-style: none;
   text-align: center;
 }
@@ -4764,7 +4764,7 @@ a.label:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   font-weight: bold;
   color: #ffffff;
   line-height: 1;
@@ -4818,7 +4818,7 @@ a.badge:focus {
 }
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 8vmin;
+  font-size: 6vmin;
   font-weight: 200;
 }
 .jumbotron > hr {
@@ -4842,13 +4842,13 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 22.5vmin;
+    font-size: 18vmin;
   }
 }
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
   line-height: 1.42857143;
   background-color: #000000;
   border: 1px solid #dddddd;
@@ -4872,7 +4872,7 @@ a.thumbnail.active {
 }
 .alert {
   padding: 15px;
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -4963,8 +4963,8 @@ a.thumbnail.active {
 }
 .progress {
   overflow: hidden;
-  height: 7vmin;
-  margin-bottom: 7vmin;
+  height: 5vmin;
+  margin-bottom: 5vmin;
   background-color: #f5f5f5;
   border-radius: 4px;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -4973,8 +4973,8 @@ a.thumbnail.active {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 5vmin;
-  line-height: 7vmin;
+  font-size: 4vmin;
+  line-height: 5vmin;
   color: #ffffff;
   text-align: center;
   background-color: #337ab7;
@@ -5237,7 +5237,7 @@ a.list-group-item-danger.active:focus {
   line-height: 1.3;
 }
 .panel {
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
   background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -5258,7 +5258,7 @@ a.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 6vmin;
+  font-size: 5vmin;
   color: inherit;
 }
 .panel-title > a,
@@ -5444,7 +5444,7 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 0;
 }
 .panel-group {
-  margin-bottom: 7vmin;
+  margin-bottom: 5vmin;
 }
 .panel-group .panel {
   margin-bottom: 0;
@@ -5623,7 +5623,7 @@ a.list-group-item-danger.active:focus {
 }
 .close {
   float: right;
-  font-size: 7.5vmin;
+  font-size: 6vmin;
   font-weight: bold;
   line-height: 1;
   color: #000000;
@@ -5769,7 +5769,7 @@ button.close {
   z-index: 1070;
   display: block;
   font-family: 'Conv_NoMoRg__', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 5vmin;
+  font-size: 4vmin;
   font-weight: normal;
   line-height: 1.4;
   opacity: 0;
@@ -5876,7 +5876,7 @@ button.close {
   max-width: 276px;
   padding: 1px;
   font-family: 'Conv_NoMoRg__', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 5vmin;
+  font-size: 4vmin;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: left;
@@ -5903,7 +5903,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 5vmin;
+  font-size: 4vmin;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0;
@@ -8341,11 +8341,33 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .swiper-container {
-  width: 100vw;
-  height: 100vh;
+  width: 89.2vw;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5.4vmin;
+  left: 5.4vmin;
+  right: 5.4vmin;
+  bottom: 5.4vmin;
+}
+.navigation {
+  position: absolute;
+  width: 90vw;
+  left: 5.2vmin;
+  bottom: 0px;
+  background: white;
+  z-index: 9999;
+}
+div.nav {
+  font-size: 3vmin;
+  color: #F0228A;
+  padding: 0;
+  -webkit-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+div.nav.disabled {
+  text-decoration: line-through;
+}
+.swiper-button-disabled {
+  opacity: 0;
 }
 .swiper-slide {
   display: -webkit-box;
@@ -8395,8 +8417,11 @@ h1.title-page {
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
 }
-.btn:hover {
+.btn:active {
   background: rgba(255, 255, 255, 0.4);
+  border-color: #fff;
+}
+.btn-primary:hover {
   border-color: #fff;
 }
 .btn:focus,
@@ -8408,17 +8433,16 @@ h1.title-page {
   outline: none;
 }
 #bg {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 @-webkit-keyframes micPulse {
   from {
@@ -8488,11 +8512,12 @@ h1.title-page {
 }
 .fa-microphone {
   font-size: 50vmin;
+  color: black;
   -webkit-transition: all 1s ease-in-out;
           transition: all 1s ease-in-out;
 }
 .fa-microphone.recording {
-  color: red;
+  color: white;
 }
 .recording-light {
   -webkit-transition: all 1s ease-in-out;

@@ -94,10 +94,12 @@ var App = function App() {
         this.bindEvents();
         // Swiper
         mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
             direction: 'horizontal',
             loop: false,
-            speed:600
+            speed:900,
+            // Navigation arrows
+            nextButton: '.button-next',
+            prevButton: '.button-prev',
         });
 
         $('.upload').on('click', app.uploadRecording);

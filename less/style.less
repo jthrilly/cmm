@@ -2,6 +2,7 @@
 @import '../bower_components/fontawesome/less/font-awesome.less';
 @import 'variables.less'; /* Your site specific LESS variables - these override BS defaults  */
 @import (inline) '../bower_components/swiper/dist/css/swiper.min.css';
+@import (inline) '../bower_components/animate.css/animate.min.css';
 
 @fa-font-path:        "../fonts";
 
@@ -42,15 +43,45 @@ body {
 
 }
 
+.navigation {
+	position:absolute;
+	width:90vw;
+	left:5.2vmin;
+	bottom:0px;
+	background:white;
+	z-index:9999;
+}
+
+div.nav {
+	// display:inline-block;
+	font-size:3vmin;
+	color:#9B1E5D;
+	padding:0;
+	transition:all 1s ease-in-out;
+}
+
+div.nav.disabled {
+	text-decoration:line-through;
+}
+
+.swiper-button-disabled {
+	opacity:0;
+}
+
 .swiper-slide {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
 .progress {
-	width:70vmin;
+	width:50vmin;
+	height:3vmin;
+}
+
+.progress-bar {
+	background-color:#5F5F5F;
 }
 
 .row {
@@ -83,21 +114,24 @@ h1.title-page {
     border-color:#fff;
 }
 
+.btn-primary:hover {
+	border-color:#fff;
+}
+
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
     outline: none;
 }
 
 #bg {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+	position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    width: 100vw;
+	    height: 100vh;
+	    z-index: -100;
+	    object-fit: fill;
 }
 
 @keyframes micPulse {
@@ -120,11 +154,12 @@ h1.title-page {
 
 .fa-microphone {
     font-size: 50vmin;
+	color:black;
     transition: all 1s ease-in-out;
 }
 
 .fa-microphone.recording {
-    color:red;
+    color:white;
 
 }
 
