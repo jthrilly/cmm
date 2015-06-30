@@ -45,16 +45,22 @@ body {
 
 .navigation {
 	position:absolute;
-	width:90vw;
-	left:5.2vmin;
+	width:100vw;
+	left:0;
+	right:0;
 	bottom:0px;
+	padding-left:5.2vmin;
+	padding-right:5.2vmin;
 	background:white;
 	z-index:9999;
+	padding-top:2vmin;
+	padding-bottom:2.5vmin;
 }
 
 div.nav {
 	// display:inline-block;
 	font-size:3vmin;
+	width:50%;
 	color:#9B1E5D;
 	padding:0;
 	transition:all 1s ease-in-out;
@@ -68,6 +74,50 @@ div.nav.disabled {
 	opacity:0;
 }
 
+div[data-slide="2"] > * {
+	opacity:0;
+	transform:translateY(100px);
+	transition: all 1s ease-in-out;
+}
+
+div[data-slide="2"] > .shown {
+	opacity:1;
+	transform:translateY(0);
+}
+
+div[data-slide="4"] > * {
+	opacity:0;
+	transform:translateY(100px);
+	transition: all 1s ease-in-out;
+}
+
+div[data-slide="4"] > .shown {
+	opacity:1;
+	transform:translateY(0);
+}
+
+div[data-slide="12"] > * {
+	opacity:0;
+	transform:translateY(100px);
+	transition: all 1s ease-in-out;
+}
+
+div[data-slide="12"] > .shown {
+	opacity:1;
+	transform:translateY(0);
+}
+
+div[data-slide="13"] > * {
+	opacity:0;
+	transform:translateY(100px);
+	transition: all 1s ease-in-out;
+}
+
+div[data-slide="13"] > .shown {
+	opacity:1;
+	transform:translateY(0);
+}
+
 .swiper-slide {
     display: flex;
     // align-items: center;
@@ -76,8 +126,37 @@ div.nav.disabled {
 }
 
 .progress {
-	width:50vmin;
+	width:80vmin;
 	height:3vmin;
+}
+
+.confirm-panel {
+	background:black;
+	position:absolute;
+	top:0;
+	bottom:0;
+	// z-index:9999;
+	transition: all 0.5s ease-in-out;
+	transform: translateY(-100vh);
+	display:flex !important;
+	flex-direction:column;
+  	justify-content: center;
+}
+
+.confirm-panel .row {
+	margin-bottom:5vmin;
+}
+
+.confirm-panel.show {
+	transform: translateY(0);
+}
+
+h3 {
+	font-size:6vmin;
+}
+
+h3 small {
+	color:white;
 }
 
 .progress-bar {
@@ -86,7 +165,38 @@ div.nav.disabled {
 
 .row {
     margin:0;
-	margin-bottom:5vmin;
+	// padding-left:5vmin;
+	// padding-right:5vmin;
+}
+
+.row.confirm {
+	position:fixed;
+	bottom:10vmin;
+	width:100%;
+}
+
+.upload-panel {
+	color: black;
+    background: white;
+    padding: 2vmin;
+    position: fixed;
+    width: 100%;
+    bottom: 8vmin;
+	left:0;
+    z-index: 999;
+    transition: transform 1s ease-in-out;
+    transform: translateY(100px);
+}
+
+.upload-panel.show {
+	transform:translateY(0);
+}
+.upload-panel.show p {
+	opacity:1;
+}
+
+.upload-panel p {
+	opacity:0;
 }
 
 .col-sm-12 {
@@ -131,7 +241,8 @@ h1.title-page {
 	    width: 100vw;
 	    height: 100vh;
 	    z-index: -100;
-	    object-fit: fill;
+	    object-fit: cover;
+		// transform:rotate(90deg);
 }
 
 @keyframes micPulse {
@@ -169,7 +280,7 @@ h1.title-page {
 }
 
 .recording-controls {
-    padding-top:10vmin;
+    padding:0;
 }
 
 .recording-text {

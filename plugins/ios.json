@@ -16,12 +16,36 @@
                     "MobileCoreServices.framework": [
                         {
                             "xml": false,
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "AudioToolbox.framework": [
                         {
                             "xml": true,
+                            "count": 1
+                        }
+                    ],
+                    "libz.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CFNetwork.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "WebKit.framework": [
+                        {
+                            "xml": false,
                             "count": 1
                         }
                     ]
@@ -49,6 +73,10 @@
                         {
                             "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"WKWebViewPolyfill\"><param name=\"ios-package\" value=\"WKWebViewPolyfill\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -67,10 +95,16 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.thisisunfinished.changmymind"
+        },
+        "com.telerik.plugins.wkwebview": {
+            "PACKAGE_NAME": "com.thisisunfinished.changmymind"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.thisisunfinished.changmymind"
+        },
+        "cordova-plugin-webserver": {
             "PACKAGE_NAME": "com.thisisunfinished.changmymind"
         }
     }

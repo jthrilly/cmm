@@ -43,6 +43,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.telerik.plugins.wkwebview/www/wkwebview.js",
+        "id": "com.telerik.plugins.wkwebview.wkwebview",
+        "clobbers": [
+            "wkwebview"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "id": "cordova-plugin-file.DirectoryEntry",
         "clobbers": [
@@ -196,7 +203,9 @@ module.exports.metadata =
     "cordova-plugin-device": "1.0.1",
     "cordova-plugin-file-transfer": "1.2.0",
     "cordova-plugin-dialogs": "1.1.1",
-    "cordova-plugin-file": "2.1.0"
+    "com.telerik.plugins.wkwebview": "0.4.0",
+    "cordova-plugin-file": "2.1.0",
+    "cordova-plugin-webserver": "1.0.3"
 }
 // BOTTOM OF METADATA
 });

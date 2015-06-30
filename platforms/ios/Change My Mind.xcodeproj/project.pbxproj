@@ -48,6 +48,17 @@
 		C5288789E2294D15A93B8969 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 82677083FD6547F3902F47F8 /* CDVNotification.m */; };
 		04D7F710898C4C03963B6756 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBD0020B15384C4CACDD484E /* CDVNotification.bundle */; };
 		F6A3C703340745999AC16547 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D945CF27F246E2AEAC07CA /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8FA5D48E83AD46A3BDEDA7E2 /* GCDWebServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8D9E902BD046D7A3E4D200 /* GCDWebServer.framework */; };
+		B0704F9B91464748B275D857 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFDE2A806304C1FA07170CD /* libz.dylib */; };
+		FE67034E88744B6F86F8526D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFED10F67E74C6AA0087A9D /* CFNetwork.framework */; };
+		1719F341C09048F488150CD6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FD733FA74F475C92E860BB /* SystemConfiguration.framework */; };
+		FAE2E18FF5AC47E487E2C95C /* MyMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775DB36F8F6448E9A1F9FD8D /* MyMainViewController.m */; };
+		C552DED6B92342AFB553DB52 /* AppDelegate+WKWebViewPolyfill.h in Resources */ = {isa = PBXBuildFile; fileRef = 2991C82A4A134A74837CAE4E /* AppDelegate+WKWebViewPolyfill.h */; };
+		5C7B5CF0D58943CA8EFDBCE8 /* AppDelegate+WKWebViewPolyfill.m in Sources */ = {isa = PBXBuildFile; fileRef = B01C22DB6DAB480E894EBB10 /* AppDelegate+WKWebViewPolyfill.m */; };
+		D947E9C1001C4F04A3111396 /* ReroutingUIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 476B8CA62F0A48C1AA58F0E1 /* ReroutingUIWebView.m */; };
+		B3783395C2354E93A02CEACB /* CDVWebViewOperationsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C00237282A894BA889063FB9 /* CDVWebViewOperationsDelegate.m */; };
+		4220ED17D8024E94B3F3B039 /* CDVWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 092F1FD4AD084C5EA0784927 /* CDVWebViewUIDelegate.m */; };
+		CC46BE5A4B8C49AE99F13662 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B62058B99524524BD2598EE /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +140,21 @@
 		FD39972F25B3438999B20E0D /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		BBD0020B15384C4CACDD484E /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
 		A1D945CF27F246E2AEAC07CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		7A8D9E902BD046D7A3E4D200 /* GCDWebServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "GCDWebServer.framework"; path = "Change My Mind/Plugins/cordova-plugin-webserver/GCDWebServer.framework"; sourceTree = "<group>"; };
+		8DFDE2A806304C1FA07170CD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		DDFED10F67E74C6AA0087A9D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CFNetwork.framework"; path = "System/Library/Frameworks/CFNetwork.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		53FD733FA74F475C92E860BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		775DB36F8F6448E9A1F9FD8D /* MyMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MyMainViewController.m"; path = "com.telerik.plugins.wkwebview/MyMainViewController.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		2991C82A4A134A74837CAE4E /* AppDelegate+WKWebViewPolyfill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+WKWebViewPolyfill.h"; path = "com.telerik.plugins.wkwebview/AppDelegate+WKWebViewPolyfill.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		B01C22DB6DAB480E894EBB10 /* AppDelegate+WKWebViewPolyfill.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+WKWebViewPolyfill.m"; path = "com.telerik.plugins.wkwebview/AppDelegate+WKWebViewPolyfill.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		476B8CA62F0A48C1AA58F0E1 /* ReroutingUIWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ReroutingUIWebView.m"; path = "com.telerik.plugins.wkwebview/ReroutingUIWebView.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		C00237282A894BA889063FB9 /* CDVWebViewOperationsDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVWebViewOperationsDelegate.m"; path = "com.telerik.plugins.wkwebview/CDVWebViewOperationsDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		092F1FD4AD084C5EA0784927 /* CDVWebViewUIDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVWebViewUIDelegate.m"; path = "com.telerik.plugins.wkwebview/CDVWebViewUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		87C00CF1C916431EB014CF0C /* MyMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyMainViewController.h"; path = "com.telerik.plugins.wkwebview/MyMainViewController.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		61E3152109CB45589A5A78F5 /* ReroutingUIWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ReroutingUIWebView.h"; path = "com.telerik.plugins.wkwebview/ReroutingUIWebView.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		FA5E04ED3F9D443D9FF81163 /* CDVWebViewOperationsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVWebViewOperationsDelegate.h"; path = "com.telerik.plugins.wkwebview/CDVWebViewOperationsDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D11A45A26167433B902EFD7E /* CDVWebViewUIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVWebViewUIDelegate.h"; path = "com.telerik.plugins.wkwebview/CDVWebViewUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4B62058B99524524BD2598EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +167,11 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				F6A3C703340745999AC16547 /* AudioToolbox.framework in Frameworks */,
+				8FA5D48E83AD46A3BDEDA7E2 /* GCDWebServer.framework in Frameworks */,
+				B0704F9B91464748B275D857 /* libz.dylib in Frameworks */,
+				FE67034E88744B6F86F8526D /* CFNetwork.framework in Frameworks */,
+				1719F341C09048F488150CD6 /* SystemConfiguration.framework in Frameworks */,
+				CC46BE5A4B8C49AE99F13662 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +246,11 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
 				A1D945CF27F246E2AEAC07CA /* AudioToolbox.framework */,
+				7A8D9E902BD046D7A3E4D200 /* GCDWebServer.framework */,
+				8DFDE2A806304C1FA07170CD /* libz.dylib */,
+				DDFED10F67E74C6AA0087A9D /* CFNetwork.framework */,
+				53FD733FA74F475C92E860BB /* SystemConfiguration.framework */,
+				4B62058B99524524BD2598EE /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,6 +280,16 @@
 				8AC73FEF36134820A1E7BF79 /* CDVFileTransfer.h */,
 				82677083FD6547F3902F47F8 /* CDVNotification.m */,
 				FD39972F25B3438999B20E0D /* CDVNotification.h */,
+				775DB36F8F6448E9A1F9FD8D /* MyMainViewController.m */,
+				2991C82A4A134A74837CAE4E /* AppDelegate+WKWebViewPolyfill.h */,
+				B01C22DB6DAB480E894EBB10 /* AppDelegate+WKWebViewPolyfill.m */,
+				476B8CA62F0A48C1AA58F0E1 /* ReroutingUIWebView.m */,
+				C00237282A894BA889063FB9 /* CDVWebViewOperationsDelegate.m */,
+				092F1FD4AD084C5EA0784927 /* CDVWebViewUIDelegate.m */,
+				87C00CF1C916431EB014CF0C /* MyMainViewController.h */,
+				61E3152109CB45589A5A78F5 /* ReroutingUIWebView.h */,
+				FA5E04ED3F9D443D9FF81163 /* CDVWebViewOperationsDelegate.h */,
+				D11A45A26167433B902EFD7E /* CDVWebViewUIDelegate.h */,
 			);
 			name = Plugins;
 			path = "Change My Mind/Plugins";
@@ -436,6 +482,12 @@
 				2A2E837F0AB64211806A77FC /* CDVDevice.m in Sources */,
 				E1B9BA73F602436A93286A85 /* CDVFileTransfer.m in Sources */,
 				C5288789E2294D15A93B8969 /* CDVNotification.m in Sources */,
+				FAE2E18FF5AC47E487E2C95C /* MyMainViewController.m in Sources */,
+				C552DED6B92342AFB553DB52 /* AppDelegate+WKWebViewPolyfill.h in Resources */,
+				5C7B5CF0D58943CA8EFDBCE8 /* AppDelegate+WKWebViewPolyfill.m in Sources */,
+				D947E9C1001C4F04A3111396 /* ReroutingUIWebView.m in Sources */,
+				B3783395C2354E93A02CEACB /* CDVWebViewOperationsDelegate.m in Sources */,
+				4220ED17D8024E94B3F3B039 /* CDVWebViewUIDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +530,10 @@
 				);
 				PRODUCT_NAME = "Change My Mind";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Change My Mind/Plugins/cordova-plugin-webserver\"",
+				);
 			};
 			name = Debug;
 		};
@@ -507,6 +563,10 @@
 				);
 				PRODUCT_NAME = "Change My Mind";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Change My Mind/Plugins/cordova-plugin-webserver\"",
+				);
 			};
 			name = Release;
 		};

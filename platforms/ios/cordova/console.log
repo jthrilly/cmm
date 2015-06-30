@@ -232,3 +232,242 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 2015-06-24 23:37:58.984 Change My Mind[27178:1254241] [CDVTimer][TotalPluginStartup] 2.138972ms
 2015-06-24 23:37:59.185 Change My Mind[27178:1254241] Resetting plugins due to page load.
 2015-06-24 23:37:59.462 Change My Mind[27178:1254241] Finished load of: file:///Users/joshua/Library/Developer/CoreSimulator/Devices/6FB1A616-34D2-4893-8838-5BA2E07B86C5/data/Containers/Bundle/Application/CEA67E23-61CB-4C64-84CB-76F276659098/Change%20My%20Mind.app/www/index.html
+2015-06-25 00:51:59.286 Change My Mind[27178:1254241] Resetting plugins due to page load.
+2015-06-25 00:51:59.288 Change My Mind[27178:1254241] Failed to load webpage with error: The requested URL was not found on this server.
+2015-06-25 00:52:04.375 Change My Mind[27178:1254241] Resetting plugins due to page load.
+2015-06-25 00:52:05.470 Change My Mind[27178:1254241] Finished load of: https://www.google.co.uk/?gfe_rd=cr&ei=pEKLVeWiGcPH8gf86ID4DQ&gws_rd=ssl
+2015-06-25 00:53:24.849 Change My Mind[28282:1318342] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-25 00:53:24.850 Change My Mind[28282:1318342] Multi-tasking -> Device: YES, App: YES
+2015-06-25 00:53:24.852 Change My Mind[28282:1318342] Unlimited access to network resources
+2015-06-25 00:53:24.952 Change My Mind[28282:1318342] [CDVTimer][file] 1.052976ms
+2015-06-25 00:53:24.953 Change My Mind[28282:1318342] [CDVTimer][TotalPluginStartup] 1.241028ms
+2015-06-25 00:53:25.022 Change My Mind[28282:1318342] Resetting plugins due to page load.
+2015-06-25 00:53:25.227 Change My Mind[28282:1318342] Finished load of: file:///Users/joshua/Library/Developer/CoreSimulator/Devices/6FB1A616-34D2-4893-8838-5BA2E07B86C5/data/Containers/Bundle/Application/494F014D-F595-4A8A-865A-E2DFE885BC9A/Change%20My%20Mind.app/www/index.html
+2015-06-25 00:57:07.184 Change My Mind[28409:1322913] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-25 00:57:07.185 Change My Mind[28409:1322913] Multi-tasking -> Device: YES, App: YES
+2015-06-25 00:57:07.186 Change My Mind[28409:1322913] Unlimited access to network resources
+2015-06-25 00:57:07.290 Change My Mind[28409:1322913] [CDVTimer][file] 1.187980ms
+2015-06-25 00:57:07.290 Change My Mind[28409:1322913] [CDVTimer][TotalPluginStartup] 1.379013ms
+2015-06-25 00:57:07.349 Change My Mind[28409:1322913] Resetting plugins due to page load.
+2015-06-25 00:57:07.530 Change My Mind[28409:1322913] Finished load of: file:///Users/joshua/Library/Developer/CoreSimulator/Devices/6FB1A616-34D2-4893-8838-5BA2E07B86C5/data/Containers/Bundle/Application/9102CD31-B33A-4BE1-AA3D-3D542F55BBED/Change%20My%20Mind.app/www/index.html
+2015-06-30 00:59:45.886 Change My Mind[16864:829488] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-30 00:59:45.888 Change My Mind[16864:829488] Multi-tasking -> Device: YES, App: YES
+2015-06-30 00:59:45.899 Change My Mind[16864:829488] Unlimited access to network resources
+2015-06-30 00:59:46.126 Change My Mind[16864:829488] Using a WKWebView
+2015-06-30 00:59:46.291 Change My Mind[16864:829488] [CDVTimer][file] 1.511991ms
+2015-06-30 00:59:46.291 Change My Mind[16864:829488] [CDVTimer][TotalPluginStartup] 2.063036ms
+2015-06-30 00:59:46.297 Change My Mind[16864:829488] Started http daemon: http://localhost:12344/ 
+2015-06-30 00:59:47.046 Change My Mind[16864:829488] <CATransformLayer: 0x7bb44fe0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.484 Change My Mind[16864:829488] <CATransformLayer: 0x7b61e820> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.485 Change My Mind[16864:829488] <CATransformLayer: 0x7b62c180> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.485 Change My Mind[16864:829488] <CATransformLayer: 0x7b633cf0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.485 Change My Mind[16864:829488] <CATransformLayer: 0x7b6361f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.485 Change My Mind[16864:829488] <CATransformLayer: 0x7b62fc50> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.485 Change My Mind[16864:829488] <CATransformLayer: 0x7b6190e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.485 Change My Mind[16864:829488] <CATransformLayer: 0x7b62ff30> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.485 Change My Mind[16864:829488] <CATransformLayer: 0x7b637bf0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.486 Change My Mind[16864:829488] <CATransformLayer: 0x7b6102e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.486 Change My Mind[16864:829488] <CATransformLayer: 0x7b612dc0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.486 Change My Mind[16864:829488] <CATransformLayer: 0x7b6358e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.486 Change My Mind[16864:829488] <CATransformLayer: 0x7b622830> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.486 Change My Mind[16864:829488] <CATransformLayer: 0x7b620e00> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.486 Change My Mind[16864:829488] <CATransformLayer: 0x7b61ee30> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.486 Change My Mind[16864:829488] <CATransformLayer: 0x7b623320> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.486 Change My Mind[16864:829488] <CATransformLayer: 0x7b61ed00> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.487 Change My Mind[16864:829488] <CATransformLayer: 0x7b62d230> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.487 Change My Mind[16864:829488] <CATransformLayer: 0x7b62d260> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:53.487 Change My Mind[16864:829488] <CATransformLayer: 0x7b61ad80> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.475 Change My Mind[16864:829488] <CATransformLayer: 0x7ba35c20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.475 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2b760> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.476 Change My Mind[16864:829488] <CATransformLayer: 0x7ba3a790> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.476 Change My Mind[16864:829488] <CATransformLayer: 0x7ba406f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.476 Change My Mind[16864:829488] <CATransformLayer: 0x7ba3f590> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.476 Change My Mind[16864:829488] <CATransformLayer: 0x7ba25a60> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.476 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2aba0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.476 Change My Mind[16864:829488] <CATransformLayer: 0x7ba432e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.476 Change My Mind[16864:829488] <CATransformLayer: 0x7ba24cc0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.476 Change My Mind[16864:829488] <CATransformLayer: 0x7ba24cf0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.477 Change My Mind[16864:829488] <CATransformLayer: 0x7ba3b6b0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.477 Change My Mind[16864:829488] <CATransformLayer: 0x7ba3b6e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.477 Change My Mind[16864:829488] <CATransformLayer: 0x7ba43920> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.477 Change My Mind[16864:829488] <CATransformLayer: 0x7ba43950> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.477 Change My Mind[16864:829488] <CATransformLayer: 0x7ba35e20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.477 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2da50> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.477 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2da80> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.477 Change My Mind[16864:829488] <CATransformLayer: 0x7ba31b10> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:56.478 Change My Mind[16864:829488] <CATransformLayer: 0x7ba31b40> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.481 Change My Mind[16864:829488] <CATransformLayer: 0x7bb35300> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.481 Change My Mind[16864:829488] <CATransformLayer: 0x7bb37310> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.481 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3ca40> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.482 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c7d0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.482 Change My Mind[16864:829488] <CATransformLayer: 0x7bb42670> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.482 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3ce00> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.482 Change My Mind[16864:829488] <CATransformLayer: 0x7bb25b10> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.482 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3cfb0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.482 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3cfe0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.483 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39df0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.483 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39e20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.483 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c890> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.483 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c8c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.483 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3e400> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.483 Change My Mind[16864:829488] <CATransformLayer: 0x7bb41970> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.483 Change My Mind[16864:829488] <CATransformLayer: 0x7bb34cf0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.483 Change My Mind[16864:829488] <CATransformLayer: 0x7bb34d20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.484 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3a280> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 00:59:59.484 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3a2b0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.212 Change My Mind[16864:829488] <CATransformLayer: 0x7bb405a0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.212 Change My Mind[16864:829488] <CATransformLayer: 0x7bb2d180> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.213 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39ff0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.213 Change My Mind[16864:829488] <CATransformLayer: 0x7bb37230> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.213 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3f100> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.213 Change My Mind[16864:829488] <CATransformLayer: 0x7bb443a0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.213 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3b2e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.213 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3ce00> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.213 Change My Mind[16864:829488] <CATransformLayer: 0x7bb25b10> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.213 Change My Mind[16864:829488] <CATransformLayer: 0x7bb4a2f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.214 Change My Mind[16864:829488] <CATransformLayer: 0x7bb4a320> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.214 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3cfb0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.214 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3cfe0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.214 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39df0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.214 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c8c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.214 Change My Mind[16864:829488] <CATransformLayer: 0x7bb41940> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.214 Change My Mind[16864:829488] <CATransformLayer: 0x7bb41970> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.214 Change My Mind[16864:829488] <CATransformLayer: 0x7bb21180> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:05.215 Change My Mind[16864:829488] <CATransformLayer: 0x7bb211b0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.104 Change My Mind[16864:829488] <CATransformLayer: 0x7bb35300> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.104 Change My Mind[16864:829488] <CATransformLayer: 0x7bb37310> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.104 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c7d0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.105 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3ece0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.105 Change My Mind[16864:829488] <CATransformLayer: 0x7bb432a0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.105 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3d090> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.105 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3ca40> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.105 Change My Mind[16864:829488] <CATransformLayer: 0x7bb25b10> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.105 Change My Mind[16864:829488] <CATransformLayer: 0x7bb42670> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.105 Change My Mind[16864:829488] <CATransformLayer: 0x7bb4a2f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.106 Change My Mind[16864:829488] <CATransformLayer: 0x7bb4a320> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.106 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3cfb0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.106 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39e20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.106 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c890> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.106 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c8c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.106 Change My Mind[16864:829488] <CATransformLayer: 0x7bb41940> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:07.106 Change My Mind[16864:829488] <CATransformLayer: 0x7bb41970> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.094 Change My Mind[16864:829488] <CATransformLayer: 0x7b786360> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.094 Change My Mind[16864:829488] <CATransformLayer: 0x7b790a20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.094 Change My Mind[16864:829488] <CATransformLayer: 0x7b795240> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.094 Change My Mind[16864:829488] <CATransformLayer: 0x7b795270> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.094 Change My Mind[16864:829488] <CATransformLayer: 0x7b77a520> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.095 Change My Mind[16864:829488] <CATransformLayer: 0x7b7977f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.095 Change My Mind[16864:829488] <CATransformLayer: 0x7b77a550> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.095 Change My Mind[16864:829488] <CATransformLayer: 0x7b793600> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.095 Change My Mind[16864:829488] <CATransformLayer: 0x7b793630> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.095 Change My Mind[16864:829488] <CATransformLayer: 0x7b791c20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.095 Change My Mind[16864:829488] <CATransformLayer: 0x7b791c50> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.095 Change My Mind[16864:829488] <CATransformLayer: 0x7b777400> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.095 Change My Mind[16864:829488] <CATransformLayer: 0x7b784f40> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.096 Change My Mind[16864:829488] <CATransformLayer: 0x7b78c990> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.096 Change My Mind[16864:829488] <CATransformLayer: 0x7b78c9c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.096 Change My Mind[16864:829488] <CATransformLayer: 0x7b797ef0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:09.096 Change My Mind[16864:829488] <CATransformLayer: 0x7b797fc0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.100 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3f100> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.101 Change My Mind[16864:829488] <CATransformLayer: 0x7bb443a0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.101 Change My Mind[16864:829488] <CATransformLayer: 0x7bb2d180> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.101 Change My Mind[16864:829488] <CATransformLayer: 0x7bb42670> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.101 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3ce00> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.101 Change My Mind[16864:829488] <CATransformLayer: 0x7bb4a2f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.101 Change My Mind[16864:829488] <CATransformLayer: 0x7bb4a320> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.101 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3cfb0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.102 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3cfe0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.102 Change My Mind[16864:829488] <CATransformLayer: 0x7bb49730> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.102 Change My Mind[16864:829488] <CATransformLayer: 0x7bb49760> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.102 Change My Mind[16864:829488] <CATransformLayer: 0x7bb408c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.102 Change My Mind[16864:829488] <CATransformLayer: 0x7bb40a90> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.102 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39df0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.102 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39e20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.102 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c890> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:11.103 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c8c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.337 Change My Mind[16864:829488] <CATransformLayer: 0x7ba432e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.337 Change My Mind[16864:829488] <CATransformLayer: 0x7ba13e00> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.337 Change My Mind[16864:829488] <CATransformLayer: 0x7ba25200> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.337 Change My Mind[16864:829488] <CATransformLayer: 0x7ba25fa0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.337 Change My Mind[16864:829488] <CATransformLayer: 0x7ba303c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.338 Change My Mind[16864:829488] <CATransformLayer: 0x7ba21ba0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.338 Change My Mind[16864:829488] <CATransformLayer: 0x7ba406f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.338 Change My Mind[16864:829488] <CATransformLayer: 0x7ba3f590> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.338 Change My Mind[16864:829488] <CATransformLayer: 0x7ba25a60> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.338 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2aba0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.338 Change My Mind[16864:829488] <CATransformLayer: 0x7ba1c3d0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.338 Change My Mind[16864:829488] <CATransformLayer: 0x7ba13e30> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.338 Change My Mind[16864:829488] <CATransformLayer: 0x7ba36060> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.339 Change My Mind[16864:829488] <CATransformLayer: 0x7ba36090> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.339 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2b730> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.339 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2b760> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:17.339 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2abf0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.462 Change My Mind[16864:829488] <CATransformLayer: 0x7ba1c3d0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.462 Change My Mind[16864:829488] <CATransformLayer: 0x7ba20680> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.462 Change My Mind[16864:829488] <CATransformLayer: 0x7ba25fa0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.462 Change My Mind[16864:829488] <CATransformLayer: 0x7ba25200> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.462 Change My Mind[16864:829488] <CATransformLayer: 0x7ba35c20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.462 Change My Mind[16864:829488] <CATransformLayer: 0x7ba256e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.463 Change My Mind[16864:829488] <CATransformLayer: 0x7ba25a60> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.463 Change My Mind[16864:829488] <CATransformLayer: 0x7ba2aba0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:32.463 Change My Mind[16864:829488] <CATransformLayer: 0x7ba3a790> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.453 Change My Mind[16864:829488] <CATransformLayer: 0x7b78de40> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.454 Change My Mind[16864:829488] <CATransformLayer: 0x7b78de70> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.454 Change My Mind[16864:829488] <CATransformLayer: 0x7b786330> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.454 Change My Mind[16864:829488] <CATransformLayer: 0x7b786360> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.454 Change My Mind[16864:829488] <CATransformLayer: 0x7b793600> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.454 Change My Mind[16864:829488] <CATransformLayer: 0x7b793630> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.454 Change My Mind[16864:829488] <CATransformLayer: 0x7b77a520> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.454 Change My Mind[16864:829488] <CATransformLayer: 0x7b77a550> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:35.455 Change My Mind[16864:829488] <CATransformLayer: 0x7b777400> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.455 Change My Mind[16864:829488] <CATransformLayer: 0x7b633e60> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.456 Change My Mind[16864:829488] <CATransformLayer: 0x7b71dca0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.456 Change My Mind[16864:829488] <CATransformLayer: 0x7b78c7f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.456 Change My Mind[16864:829488] <CATransformLayer: 0x7b6234e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.456 Change My Mind[16864:829488] <CATransformLayer: 0x7b634aa0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.457 Change My Mind[16864:829488] <CATransformLayer: 0x7b634ad0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.457 Change My Mind[16864:829488] <CATransformLayer: 0x7b630630> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.457 Change My Mind[16864:829488] <CATransformLayer: 0x7b630660> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:41.457 Change My Mind[16864:829488] <CATransformLayer: 0x7b621c90> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.451 Change My Mind[16864:829488] <CATransformLayer: 0x7b794480> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.451 Change My Mind[16864:829488] <CATransformLayer: 0x7b781a20> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.452 Change My Mind[16864:829488] <CATransformLayer: 0x7b78de40> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.452 Change My Mind[16864:829488] <CATransformLayer: 0x7b78de70> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.452 Change My Mind[16864:829488] <CATransformLayer: 0x7b795240> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.452 Change My Mind[16864:829488] <CATransformLayer: 0x7b612f30> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.453 Change My Mind[16864:829488] <CATransformLayer: 0x7b61a020> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.453 Change My Mind[16864:829488] <CATransformLayer: 0x7b629fc0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:44.453 Change My Mind[16864:829488] <CATransformLayer: 0x7b6102e0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.391 Change My Mind[16864:829488] <CATransformLayer: 0x7bb432a0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.392 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3ece0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.392 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39ff0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.392 Change My Mind[16864:829488] <CATransformLayer: 0x7bb37230> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.392 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c890> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.393 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c8c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.393 Change My Mind[16864:829488] <CATransformLayer: 0x7bb40850> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.393 Change My Mind[16864:829488] <CATransformLayer: 0x7bb40880> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:51.393 Change My Mind[16864:829488] <CATransformLayer: 0x7bb21180> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:54.381 Change My Mind[16864:829488] <CATransformLayer: 0x7bb39ff0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:54.382 Change My Mind[16864:829488] <CATransformLayer: 0x7bb37230> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:54.382 Change My Mind[16864:829488] <CATransformLayer: 0x7bb40790> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:54.382 Change My Mind[16864:829488] <CATransformLayer: 0x7bb49e80> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:54.382 Change My Mind[16864:829488] <CATransformLayer: 0x7bb4a2f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:54.382 Change My Mind[16864:829488] <CATransformLayer: 0x7bb4a320> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:54.382 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c890> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:54.382 Change My Mind[16864:829488] <CATransformLayer: 0x7bb3c8c0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:59.447 Change My Mind[16864:829488] <CATransformLayer: 0x7b78c7f0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:59.447 Change My Mind[16864:829488] <CATransformLayer: 0x7b719060> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:59.447 Change My Mind[16864:829488] <CATransformLayer: 0x7b71ca60> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:59.447 Change My Mind[16864:829488] <CATransformLayer: 0x7b786330> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:59.448 Change My Mind[16864:829488] <CATransformLayer: 0x7b786360> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:59.448 Change My Mind[16864:829488] <CATransformLayer: 0x7b78de40> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:59.448 Change My Mind[16864:829488] <CATransformLayer: 0x7b78de70> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:00:59.448 Change My Mind[16864:829488] <CATransformLayer: 0x7b795240> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:01:06.555 Change My Mind[16864:829488] Started recording audio sample 'myrecording.m4a'
+2015-06-30 01:01:06.555 Change My Mind[16864:829488] THREAD WARNING: ['Media'] took '1460.705078' ms. Plugin should use a background thread.
+2015-06-30 01:01:21.764 Change My Mind[16864:829488] Stopped recording audio sample 'myrecording.m4a'
+2015-06-30 01:01:21.771 Change My Mind[16864:829488] Finished recording audio sample 'myrecording.m4a'
+2015-06-30 01:01:21.789 Change My Mind[16864:829488] <CATransformLayer: 0x7b633e40> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:01:21.789 Change My Mind[16864:829488] <CATransformLayer: 0x7b61ca60> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:01:21.789 Change My Mind[16864:829488] <CATransformLayer: 0x7b6234a0> - changing property opaque in transform-only layer, will have no effect
+2015-06-30 01:01:21.789 Change My Mind[16864:829488] <CATransformLayer: 0x7b6247b0> - changing property opaque in transform-only layer, will have no effect
