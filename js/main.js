@@ -5,11 +5,16 @@
 var App = function App() {
     // Application Constructor
     var app = {};
+    var appBaseURL = "http://thisisunfinished.com/cmm/";
     var mediaRec, mediaTimer;
     var recordingSrc = "";
+    var postData = "";
     var fileURL = '';
     var recording = false;
     var recordingLength = 0;
+    var uploadFinished = false;
+    var uploadResponse = {};
+    var formFinished = false;
     var paused = false;
     var currentSlide = 0;
     var timers = [];
@@ -76,20 +81,18 @@ var App = function App() {
             }
         },
         { // 3
-        },
-        { // 4
             fnBeforeShow: function() {
                 app.navDisable();
-                $('div[data-slide="4"]').on('click', timeline[4].fnSlideClick);
+                $('div[data-slide="3"]').on('click', timeline[3].fnSlideClick);
             },
             fnAfterLeave: function() {
-                $('div[data-slide="4"]').off('click', timeline[4].fnSlideClick);
-                $('div[data-slide="4"] > *').removeClass('shown');
+                $('div[data-slide="3"]').off('click', timeline[3].fnSlideClick);
+                $('div[data-slide="3"] > *').removeClass('shown');
              // used to reset slide to default;
             },
             fnAfterShow: function() {
                 // start the timed reveals
-                var children = $('div[data-slide="4"]').children();
+                var children = $('div[data-slide="3"]').children();
                 shown = 0;
                 timers.push(setTimeout(function() {
                     $(children[0]).addClass('shown');
@@ -99,12 +102,16 @@ var App = function App() {
                 timers.push(setTimeout(function() {
                     $(children[1]).addClass('shown');
                     shown++;
+                }, 1000));
+                timers.push(setTimeout(function() {
+                    $(children[2]).addClass('shown');
+                    shown++;
                 }, 2000));
                 timers.push(setTimeout(function() {
                     app.navEnable();
-                    $(children[2]).addClass('shown');
+                    $(children[3]).addClass('shown');
                     shown++;
-                }, 4000));
+                }, 3000));
             },
             fnSlideClick: function() {
                 console.log(shown);
@@ -117,16 +124,18 @@ var App = function App() {
                     timers = [];
                 }
 
-                var children = $('div[data-slide="4"]').children();
+                var children = $('div[data-slide="3"]').children();
                 console.log('ch leng: '+children.length);
                 if (shown <= children.length) {
-                    $('div[data-slide="4"]').children(':lt('+shown+')').addClass('shown');
+                    $('div[data-slide="3"]').children(':lt('+shown+')').addClass('shown');
                     if (shown === children.length-1) {
                         app.navEnable();
                     }
                     shown++;
                 }
             }
+        },
+        { // 4
         },
         { // 5
         },
@@ -137,24 +146,18 @@ var App = function App() {
         { // 8
         },
         { // 9
-        },
-        { // 10
-        },
-        { // 11
-        },
-        { // 12
             fnBeforeShow: function() {
                 app.navDisable();
-                $('div[data-slide="12"]').on('click', timeline[12].fnSlideClick);
+                $('div[data-slide="9"]').on('click', timeline[9].fnSlideClick);
             },
             fnAfterLeave: function() {
-                $('div[data-slide="12"]').off('click', timeline[12].fnSlideClick);
-                $('div[data-slide="12"] > *').removeClass('shown');
+                $('div[data-slide="9"]').off('click', timeline[9].fnSlideClick);
+                $('div[data-slide="9"] > *').removeClass('shown');
              // used to reset slide to default;
             },
             fnAfterShow: function() {
                 // start the timed reveals
-                var children = $('div[data-slide="12"]').children();
+                var children = $('div[data-slide="9"]').children();
                 shown = 0;
                 timers.push(setTimeout(function() {
                     $(children[0]).addClass('shown');
@@ -168,18 +171,18 @@ var App = function App() {
                     app.navEnable();
                     $(children[2]).addClass('shown');
                     shown++;
-                }, 9000));
+                }, 7000));
                 timers.push(setTimeout(function() {
                     app.navEnable();
                     $(children[3]).addClass('shown');
                     shown++;
-                }, 12000));
+                }, 10000));
                 timers.push(setTimeout(function() {
                     window.mySwiper.slideNext();
                 }, 18000));
             },
             fnSlideClick: function() {
-                var children = $('div[data-slide="12"]').children();
+                var children = $('div[data-slide="9"]').children();
                 if (timers.length > 0) {
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
@@ -195,19 +198,19 @@ var App = function App() {
                 }
             }
         },
-        { // 13
+        { // 10
             fnBeforeShow: function() {
                 app.navDisable();
-                $('div[data-slide="13"]').on('click', timeline[13].fnSlideClick);
+                $('div[data-slide="10"]').on('click', timeline[10].fnSlideClick);
             },
             fnAfterLeave: function() {
-                $('div[data-slide="13"]').off('click', timeline[13].fnSlideClick);
-                $('div[data-slide="13"] > *').removeClass('shown');
+                $('div[data-slide="10"]').off('click', timeline[10].fnSlideClick);
+                $('div[data-slide="10"] > *').removeClass('shown');
              // used to reset slide to default;
             },
             fnAfterShow: function() {
                 // start the timed reveals
-                var children = $('div[data-slide="13"]').children();
+                var children = $('div[data-slide="10"]').children();
                 shown = 0;
                 timers.push(setTimeout(function() {
                     $(children[0]).addClass('shown');
@@ -218,13 +221,10 @@ var App = function App() {
                     $(children[1]).addClass('shown');
                     shown++;
                 }, 3000));
-                timers.push(setTimeout(function() {
-                    window.mySwiper.slideNext();
-                }, 10000));
 
             },
             fnSlideClick: function() {
-                var children = $('div[data-slide="13"]').children();
+                var children = $('div[data-slide="10"]').children();
                 if (timers.length > 0) {
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
@@ -240,74 +240,93 @@ var App = function App() {
                 }
             }
         },
+        { // 11
+        },
+        { // 12
+        },
+        { // 13
+            fnBeforeShow: function() {
+                window.mySwiper.lockSwipeToNext();
+                $('.button-next').addClass('disabled');
+            },
+            fnAfterLeave: function() {
+                $('.button-next').removeClass('disabled');
+            }
+        },
         { // 14
+            fnBeforeShow: function() {
+                app.navDisable();
+            }
         },
         { // 15
+            fnBeforeShow: function() {
+                app.navDisable();
+            }
         },
         { // 16
-        },
-        { // 17
             fnBeforeShow: function() {
+                console.log('before show 16');
                 app.navDisable();
             },
             fnAfterLeave: function() {
                 app.navEnable();
+                window.mySwiper.lockSwipeToPrev();
+                $('.button-prev').addClass('disabled');
+            }
+        },
+        { // 17
+            fnAfterLeave: function() {
+                $('.button-prev').removeClass('disabled');
              // used to reset slide to default;
+            },
+            fnBeforeShow: function() {
+                console.log('before show 20');
+
+
             }
         },
         { // 18
-        },
-        { // 19
-        },
-        { // 20
-        },
-        { // 21
-        },
-        { // 22
-        },
-        { // 23
-        },
-        { // 24
-        },
-    ];
-
-    function gotFS(fileSystem) {
-        fileSystem.root.getFile(recordingSrc, {
-            create: true,
-            exclusive: false
-        }, gotFileEntry, app.error);
-    }
-
-    function gotFileEntry(fileEntry) {
-        fileURL = fileEntry.toURL();
-        var uri = encodeURI("http://beta.mindful-monkey.com/test/index.php");
-
-        var options = new FileUploadOptions();
-        options.fileKey = "file";
-        options.fileName = recordingSrc;
-        options.mimeType ="audio/m4a";
-
-        var ft = new FileTransfer();
-        ft.onprogress = function(progressEvent) {
-            if (progressEvent.lengthComputable) {
-                console.log('progress..'+progressEvent.loaded);
-                var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
-                $('.progress-bar').css('width', perc+'%').attr('aria-valuenow', perc);
-            } else {
-                $('.progress-bar').css('width', 0+'%').attr('aria-valuenow', '0');
+            fnBeforeShow: function() {
+                window.mySwiper.unlockSwipeToPrev();
             }
-        };
-        ft.upload(fileURL, uri, app.uploadSuccess, app.RecordError, options);
-    }
+        }
+    ];
+    app.reset = function() {
+        mediaRec.release();
+        recordingSrc = "";
+        postData = "";
+        fileURL = '';
+        recording = false;
+        recordingLength = 0;
+        uploadFinished = false;
+        uploadResponse = {};
+        formFinished = false;
+        paused = false;
+        currentSlide = 0;
+        timers = [];
+        shown = 0;
 
-    app.uploadSuccess = function(r) {
-        console.log("Code = " + r.responseCode);
-        console.log("Response = " + r.response);
-        console.log("Sent = " + r.bytesSent);
+        app.navEnable();
+        window.mySwiper.slideTo(0);
     };
-
     app.init = function() {
         this.bindEvents();
+
+        $("#detailsForm").validate({
+            submitHandler: function(form) {
+                // do other things for a valid form
+                postData = $(form).serialize();
+                if(!uploadFinished) {
+                    //show waiting screen;
+                    formFinished = true;
+                    $('.form-row').hide();
+                    $('.loading-row').show();
+                    $('.loading-row').parent().removeClass('top');
+                } else {
+                    app.dataFinished();
+                }
+            }
+        });
         // Swiper
         window.mySwiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
@@ -353,9 +372,10 @@ var App = function App() {
         app.navDisable();
 
         // Button event handlers
-        $('.upload').on('click', app.uploadRecording);
         $('.fake-record').on('click', function() {
+            app.navEnable();
             window.mySwiper.slideNext();
+            app.navDisable();
             $('.record').trigger('click');
         });
 
@@ -385,6 +405,19 @@ var App = function App() {
             }
         });
 
+        $('.send').on('click', function() {
+            // start the upload
+            $('.upload-panel').toggleClass('show');
+            setTimeout(function(){
+                app.uploadRecording();
+            }, 500);
+
+            app.navEnable();
+            window.mySwiper.slideNext();
+            app.navDisable();
+
+        });
+
         $('.stop').on('click', function() {
             // alert('stopped button handler');
             if (recording) {
@@ -405,16 +438,31 @@ var App = function App() {
         });
 
         $('.continue').on('click', function() {
-            app.navEnable();
+
             $('.confirm-panel').removeClass('show');
             setTimeout(function() {
+                app.navEnable();
                 window.mySwiper.slideNext();
+                app.navDisable();
             }, 700);
 
         });
 
         $('.try-again').on('click', function() {
-
+            recording = false;
+            paused = false;
+            mediaRec.release();
+            $('.confirm-panel').removeClass('show');
+            setTimeout(function() {
+                app.navEnable();
+                app.previousSlide();
+                app.navDisable();
+            }, 700);
+        });
+        $('.delete').on('click', function() {
+            app.navEnable();
+            window.mySwiper.swipeTo(19);
+            app.navDisable();
         });
 
         $('.play').on('click', function() {
@@ -424,6 +472,36 @@ var App = function App() {
             app.navEnable();
             app.nextSlide();
         });
+    };
+    app.dataFinished = function() {
+        //show loader
+
+        // add uuid to serialised form
+        var uuid;
+        if (typeof uploadResponse === 'undefined' || typeof uploadResponse.uuid === 'undefined') {
+            uuid = "test";
+        } else {
+            uuid = uploadResponse.uuid;
+        }
+        postData += "&uuid=" + encodeURIComponent(uuid);
+        console.log(postData);
+        $.ajax({
+            type: 'POST',
+            data: postData,
+            url: appBaseURL+'form.php',
+            success: function(data){
+                console.log(data);
+                // within the form post callback, advance to next slide
+                app.navEnable();
+                window.mySwiper.slideTo(17);
+                app.navDisable();
+            },
+            error: function(data){
+                console.log(data);
+                alert('There was an error uploading your data. Please try again.');
+            }
+        });
+
     };
     app.bindEvents = function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -462,9 +540,9 @@ var App = function App() {
     app.getMedia = function() {
         return mediaRec;
     };
-
     app.startRecording = function() {
         if (recording === false) {
+            recordingLength = 0;
             recording = true;
             recordingSrc = "myrecording.m4a";
             mediaRec = new Media(recordingSrc, app.recordSuccess, app.error);
@@ -529,8 +607,47 @@ var App = function App() {
         document.getElementById('counter').innerHTML = time;
     };
     app.uploadRecording = function() {
-        alert('uploadRecording');
-        window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, gotFS, app.error);
+        // alert('uploadRecording');
+        window.requestFileSystem(LocalFileSystem.TEMPORARY, 0,
+            function(fileSystem) {
+                fileSystem.root.getFile(recordingSrc, {
+                    create: true,
+                    exclusive: false
+                },
+                function (fileEntry) {
+                    fileURL = fileEntry.toURL();
+                    var uri = encodeURI(appBaseURL+"audio.php");
+
+                    var options = new FileUploadOptions();
+                    options.fileKey = "file";
+                    options.fileName = recordingSrc;
+                    options.mimeType ="audio/m4a";
+
+                    var ft = new FileTransfer();
+                    ft.onprogress = function(progressEvent) {
+                        if (progressEvent.lengthComputable) {
+                            var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
+                            $('.progress-bar').css('width', perc+'%').attr('aria-valuenow', perc);
+                        } else {
+                            $('.progress-bar').css('width', 0+'%').attr('aria-valuenow', '0');
+                        }
+                    };
+
+                    ft.upload(fileURL, uri, app.uploadSuccess, app.RecordError, options);
+                }, app.error);
+            }, app.error);
+    };
+    app.uploadSuccess = function(r) {
+        uploadFinished = true;
+        uploadResponse = JSON.parse(r.response);
+        $('.upload-panel').removeClass('show');
+        // console.log("Code = " + r.responseCode);
+        // alert(uploadResponse.uuid);
+        // alert(uploadResponse);
+        // console.log("Sent = " + r.bytesSent);
+        if (formFinished) {
+            app.dataFinished();
+        }
     };
 
     return app;

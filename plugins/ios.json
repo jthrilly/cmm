@@ -77,6 +77,10 @@
                         {
                             "xml": "<feature name=\"WKWebViewPolyfill\"><param name=\"ios-package\" value=\"WKWebViewPolyfill\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -97,6 +101,9 @@
             "PACKAGE_NAME": "com.thisisunfinished.changmymind"
         },
         "com.telerik.plugins.wkwebview": {
+            "PACKAGE_NAME": "com.thisisunfinished.changmymind"
+        },
+        "cordova-plugin-console": {
             "PACKAGE_NAME": "com.thisisunfinished.changmymind"
         }
     },

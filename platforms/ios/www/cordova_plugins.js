@@ -50,6 +50,20 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-console/www/logger.js",
+        "id": "cordova-plugin-console.logger",
+        "clobbers": [
+            "cordova.logger"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+        "id": "cordova-plugin-console.console",
+        "clobbers": [
+            "console"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "id": "cordova-plugin-file.DirectoryEntry",
         "clobbers": [
@@ -204,6 +218,7 @@ module.exports.metadata =
     "cordova-plugin-file-transfer": "1.2.0",
     "cordova-plugin-dialogs": "1.1.1",
     "com.telerik.plugins.wkwebview": "0.4.0",
+    "cordova-plugin-console": "1.0.1",
     "cordova-plugin-file": "2.1.0",
     "cordova-plugin-webserver": "1.0.3"
 }

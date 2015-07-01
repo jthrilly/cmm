@@ -59,6 +59,7 @@
 		B3783395C2354E93A02CEACB /* CDVWebViewOperationsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C00237282A894BA889063FB9 /* CDVWebViewOperationsDelegate.m */; };
 		4220ED17D8024E94B3F3B039 /* CDVWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 092F1FD4AD084C5EA0784927 /* CDVWebViewUIDelegate.m */; };
 		CC46BE5A4B8C49AE99F13662 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B62058B99524524BD2598EE /* WebKit.framework */; };
+		2175B1D7741F4EB5A7D7FB3E /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD6F30D46429BB9997924 /* CDVLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,8 @@
 		FA5E04ED3F9D443D9FF81163 /* CDVWebViewOperationsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVWebViewOperationsDelegate.h"; path = "com.telerik.plugins.wkwebview/CDVWebViewOperationsDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		D11A45A26167433B902EFD7E /* CDVWebViewUIDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVWebViewUIDelegate.h"; path = "com.telerik.plugins.wkwebview/CDVWebViewUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		4B62058B99524524BD2598EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		9C6DD6F30D46429BB9997924 /* CDVLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D22B7DDA32E54B97998A352E /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +293,8 @@
 				61E3152109CB45589A5A78F5 /* ReroutingUIWebView.h */,
 				FA5E04ED3F9D443D9FF81163 /* CDVWebViewOperationsDelegate.h */,
 				D11A45A26167433B902EFD7E /* CDVWebViewUIDelegate.h */,
+				9C6DD6F30D46429BB9997924 /* CDVLogger.m */,
+				D22B7DDA32E54B97998A352E /* CDVLogger.h */,
 			);
 			name = Plugins;
 			path = "Change My Mind/Plugins";
@@ -488,6 +493,7 @@
 				D947E9C1001C4F04A3111396 /* ReroutingUIWebView.m in Sources */,
 				B3783395C2354E93A02CEACB /* CDVWebViewOperationsDelegate.m in Sources */,
 				4220ED17D8024E94B3F3B039 /* CDVWebViewUIDelegate.m in Sources */,
+				2175B1D7741F4EB5A7D7FB3E /* CDVLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
