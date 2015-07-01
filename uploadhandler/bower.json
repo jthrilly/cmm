@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "wavesurfer.js": "https://github.com/katspaugh/wavesurfer.js.git#~1.0.28"
   }
 }
