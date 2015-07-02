@@ -60,6 +60,8 @@ var App = function App() {
                 }, 15000));
             },
             fnSlideClick: function() {
+                var children = $('div[data-slide="2"]').children();
+                $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
                     console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
@@ -68,7 +70,6 @@ var App = function App() {
                     timers = [];
                 }
 
-                var children = $('div[data-slide="2"]').children();
                 shown++;
                 if (shown <= children.length) {
                     $('div[data-slide="2"]').children(':lt('+shown+')').addClass('shown');
@@ -114,7 +115,8 @@ var App = function App() {
                 }, 3000));
             },
             fnSlideClick: function() {
-                console.log(shown);
+                var children = $('div[data-slide="3"]').children();
+                $(children[shown]).addClass('shown');
 
                 if (timers.length > 0) {
                     console.log('cancelling timers');
@@ -123,8 +125,6 @@ var App = function App() {
                     }
                     timers = [];
                 }
-
-                var children = $('div[data-slide="3"]').children();
                 shown++;
                 if (shown <= children.length) {
                     $('div[data-slide="3"]').children(':lt('+shown+')').addClass('shown');
@@ -183,6 +183,7 @@ var App = function App() {
             },
             fnSlideClick: function() {
                 var children = $('div[data-slide="9"]').children();
+                $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
@@ -226,6 +227,7 @@ var App = function App() {
             },
             fnSlideClick: function() {
                 var children = $('div[data-slide="10"]').children();
+                $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
@@ -258,7 +260,11 @@ var App = function App() {
         },
         { // 14
             fnBeforeShow: function() {
+                window.plugins.insomnia.keepAwake();
                 app.navDisable();
+            },
+            fnAfterLeave: function() {
+                window.plugins.insomnia.allowSleepAgain();
             }
         },
         { // 15
@@ -286,6 +292,7 @@ var App = function App() {
             },
             fnBeforeShow: function() {
                 console.log('before show 17');
+                window.mySwiper.lockSwipeToPrev();
                 $('.button-prev').addClass('disabled');
 
 

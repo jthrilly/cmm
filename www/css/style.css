@@ -8327,7 +8327,8 @@ button.close {
   -ms-user-select: none;
   user-select: none;
 }
-input {
+input,
+textarea {
   -webkit-user-select: auto !important;
   -khtml-user-select: auto !important;
   -moz-user-select: auto !important;
@@ -8376,8 +8377,9 @@ body {
   padding-bottom: 3vmin;
 }
 .delete {
-  color: black;
+  color: white;
   border-color: black;
+  background: black;
 }
 .form-group {
   margin-left: 3vmin;

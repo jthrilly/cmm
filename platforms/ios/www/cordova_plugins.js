@@ -72,6 +72,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/nl.x-services.plugins.insomnia/www/Insomnia.js",
+        "id": "nl.x-services.plugins.insomnia.Insomnia",
+        "clobbers": [
+            "window.plugins.insomnia"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "id": "cordova-plugin-file.DirectoryEntry",
         "clobbers": [
@@ -228,6 +235,7 @@ module.exports.metadata =
     "com.telerik.plugins.wkwebview": "0.4.0",
     "cordova-plugin-console": "1.0.1",
     "cordova-plugin-inappbrowser": "1.0.1",
+    "nl.x-services.plugins.insomnia": "4.0.1",
     "cordova-plugin-file": "2.1.0",
     "cordova-plugin-webserver": "1.0.3"
 }
