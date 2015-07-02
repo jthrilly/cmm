@@ -60,7 +60,6 @@ var App = function App() {
                 }, 15000));
             },
             fnSlideClick: function() {
-                console.log(shown);
                 if (timers.length > 0) {
                     console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
@@ -70,13 +69,14 @@ var App = function App() {
                 }
 
                 var children = $('div[data-slide="2"]').children();
-                console.log('ch leng: '+children.length);
+                shown++;
                 if (shown <= children.length) {
                     $('div[data-slide="2"]').children(':lt('+shown+')').addClass('shown');
-                    if (shown === children.length-1) {
+                    if (shown === children.length) {
+                        $('div[data-slide="2"]').children().addClass('shown');
                         app.navEnable();
                     }
-                    shown++;
+
                 }
             }
         },
@@ -125,13 +125,14 @@ var App = function App() {
                 }
 
                 var children = $('div[data-slide="3"]').children();
-                console.log('ch leng: '+children.length);
+                shown++;
                 if (shown <= children.length) {
                     $('div[data-slide="3"]').children(':lt('+shown+')').addClass('shown');
-                    if (shown === children.length-1) {
+                    if (shown === children.length) {
+                        $('div[data-slide="3"]').children().addClass('shown');
                         app.navEnable();
                     }
-                    shown++;
+
                 }
             }
         },
@@ -168,7 +169,6 @@ var App = function App() {
                     shown++;
                 }, 3000));
                 timers.push(setTimeout(function() {
-                    app.navEnable();
                     $(children[2]).addClass('shown');
                     shown++;
                 }, 7000));
@@ -189,12 +189,13 @@ var App = function App() {
                     }
                     timers = [];
                 }
+                shown++;
                 if (shown <= children.length) {
                     $(children[shown]).addClass('shown');
-                    if (shown === children.length-1) {
+                    if (shown === children.length) {
+                        $('div[data-slide="9"]').children().addClass('shown');
                         app.navEnable();
                     }
-                    shown++;
                 }
             }
         },
@@ -231,12 +232,14 @@ var App = function App() {
                     }
                     timers = [];
                 }
+                shown++;
                 if (shown <= children.length) {
                     $(children[shown]).addClass('shown');
-                    if (shown === children.length-1) {
+                    if (shown === children.length) {
+                        $('div[data-slide="10"]').children().addClass('shown');
                         app.navEnable();
                     }
-                    shown++;
+
                 }
             }
         },
@@ -260,6 +263,8 @@ var App = function App() {
         },
         { // 15
             fnBeforeShow: function() {
+                $('.form-submit').removeAttr('disabled');
+                $('.form-submit').html('Submit');
                 app.navDisable();
             }
         },
@@ -280,7 +285,8 @@ var App = function App() {
              // used to reset slide to default;
             },
             fnBeforeShow: function() {
-                console.log('before show 20');
+                console.log('before show 17');
+                $('.button-prev').addClass('disabled');
 
 
             }
@@ -461,7 +467,7 @@ var App = function App() {
         });
         $('.delete').on('click', function() {
             app.navEnable();
-            window.mySwiper.swipeTo(19);
+            window.mySwiper.slideTo(19);
             app.navDisable();
         });
 
@@ -475,6 +481,8 @@ var App = function App() {
     };
     app.dataFinished = function() {
         //show loader
+        $('.form-submit').html('<i class="fa fa-spinner fa-pulse"></i> Submit');
+        $('.form-submit').attr('disabled','disabled');
 
         // add uuid to serialised form
         var uuid;

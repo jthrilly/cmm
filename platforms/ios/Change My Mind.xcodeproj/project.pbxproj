@@ -60,6 +60,7 @@
 		4220ED17D8024E94B3F3B039 /* CDVWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 092F1FD4AD084C5EA0784927 /* CDVWebViewUIDelegate.m */; };
 		CC46BE5A4B8C49AE99F13662 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B62058B99524524BD2598EE /* WebKit.framework */; };
 		2175B1D7741F4EB5A7D7FB3E /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6DD6F30D46429BB9997924 /* CDVLogger.m */; };
+		B04B5A51ADD74CA3B4DED081 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A79220FB1EEE49B3BF2B0EC6 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +159,8 @@
 		4B62058B99524524BD2598EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		9C6DD6F30D46429BB9997924 /* CDVLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		D22B7DDA32E54B97998A352E /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A79220FB1EEE49B3BF2B0EC6 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		833CCD343C9F4D05A9265D96 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +298,8 @@
 				D11A45A26167433B902EFD7E /* CDVWebViewUIDelegate.h */,
 				9C6DD6F30D46429BB9997924 /* CDVLogger.m */,
 				D22B7DDA32E54B97998A352E /* CDVLogger.h */,
+				A79220FB1EEE49B3BF2B0EC6 /* CDVInAppBrowser.m */,
+				833CCD343C9F4D05A9265D96 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = "Change My Mind/Plugins";
@@ -494,6 +499,7 @@
 				B3783395C2354E93A02CEACB /* CDVWebViewOperationsDelegate.m in Sources */,
 				4220ED17D8024E94B3F3B039 /* CDVWebViewUIDelegate.m in Sources */,
 				2175B1D7741F4EB5A7D7FB3E /* CDVLogger.m in Sources */,
+				B04B5A51ADD74CA3B4DED081 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

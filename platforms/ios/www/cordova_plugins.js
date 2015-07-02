@@ -64,6 +64,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "id": "cordova-plugin-file.DirectoryEntry",
         "clobbers": [
@@ -219,6 +227,7 @@ module.exports.metadata =
     "cordova-plugin-dialogs": "1.1.1",
     "com.telerik.plugins.wkwebview": "0.4.0",
     "cordova-plugin-console": "1.0.1",
+    "cordova-plugin-inappbrowser": "1.0.1",
     "cordova-plugin-file": "2.1.0",
     "cordova-plugin-webserver": "1.0.3"
 }
