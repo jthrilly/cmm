@@ -4204,8 +4204,8 @@ var App = function App() {
         uploadResponse = JSON.parse(r.response);
         $('.upload-panel').removeClass('show');
         // console.log("Code = " + r.responseCode);
-        alert(uploadResponse.uuid);
-        alert(uploadResponse);
+        // alert(uploadResponse.uuid);
+        // alert(uploadResponse);
         // console.log("Sent = " + r.bytesSent);
         if (formFinished) {
             app.dataFinished();
