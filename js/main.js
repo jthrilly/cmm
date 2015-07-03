@@ -126,6 +126,9 @@ var App = function App() {
             }
         },
         { // 4
+            fnBeforeShow: function() {
+                app.navEnable();
+            }
         },
         { // 5
         },
@@ -219,6 +222,9 @@ var App = function App() {
             }
         },
         { // 11
+            fnBeforeShow: function() {
+                app.navEnable();
+            }
         },
         { // 12
         },
@@ -267,8 +273,6 @@ var App = function App() {
                 console.log('before show 17');
                 window.mySwiper.lockSwipeToPrev();
                 $('.button-prev').addClass('disabled');
-
-
             }
         },
         { // 18
