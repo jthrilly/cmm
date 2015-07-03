@@ -449,6 +449,12 @@ var App = function App() {
                 app.navDisable();
             }, 700);
         });
+
+        $('.restart').on('click', function() {
+            app.navEnable();
+            window.mySwiper.slideTo(0);
+        });
+
         $('.delete').on('click', function() {
             app.navEnable();
             window.mySwiper.slideTo(19);
