@@ -55,12 +55,10 @@ var App = function App() {
                     $(children[2]).addClass('shown');
                     shown++;
                 }, 6000));
-                timers.push(setTimeout(function() {
-                    window.mySwiper.slideNext();
-                }, 15000));
             },
             fnSlideClick: function() {
-                var children = $('div[data-slide="2"]').children();
+                var children = $('div[data-slide="2"]').children().addClass('shown');
+                app.navEnable();
                 $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
                     console.log('cancelling timers');
@@ -70,15 +68,15 @@ var App = function App() {
                     timers = [];
                 }
 
-                shown++;
-                if (shown <= children.length) {
-                    $('div[data-slide="2"]').children(':lt('+shown+')').addClass('shown');
-                    if (shown === children.length) {
-                        $('div[data-slide="2"]').children().addClass('shown');
-                        app.navEnable();
-                    }
-
-                }
+                // shown++;
+                // if (shown <= children.length) {
+                //     $('div[data-slide="2"]').children(':lt('+shown+')').addClass('shown');
+                //     if (shown === children.length) {
+                //         $('div[data-slide="2"]').children().addClass('shown');
+                //         app.navEnable();
+                //     }
+                //
+                // }
             }
         },
         { // 3
@@ -115,24 +113,15 @@ var App = function App() {
                 }, 3000));
             },
             fnSlideClick: function() {
-                var children = $('div[data-slide="3"]').children();
+                var children = $('div[data-slide="3"]').children().addClass('shown');
+                app.navEnable();
                 $(children[shown]).addClass('shown');
-
                 if (timers.length > 0) {
                     console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
                     }
                     timers = [];
-                }
-                shown++;
-                if (shown <= children.length) {
-                    $('div[data-slide="3"]').children(':lt('+shown+')').addClass('shown');
-                    if (shown === children.length) {
-                        $('div[data-slide="3"]').children().addClass('shown');
-                        app.navEnable();
-                    }
-
                 }
             }
         },
@@ -177,26 +166,17 @@ var App = function App() {
                     $(children[3]).addClass('shown');
                     shown++;
                 }, 10000));
-                timers.push(setTimeout(function() {
-                    window.mySwiper.slideNext();
-                }, 18000));
             },
             fnSlideClick: function() {
-                var children = $('div[data-slide="9"]').children();
+                var children = $('div[data-slide="9"]').children().addClass('shown');
+                app.navEnable();
                 $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
+                    console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
                     }
                     timers = [];
-                }
-                shown++;
-                if (shown <= children.length) {
-                    $(children[shown]).addClass('shown');
-                    if (shown === children.length) {
-                        $('div[data-slide="9"]').children().addClass('shown');
-                        app.navEnable();
-                    }
                 }
             }
         },
@@ -226,22 +206,15 @@ var App = function App() {
 
             },
             fnSlideClick: function() {
-                var children = $('div[data-slide="10"]').children();
+                var children = $('div[data-slide="10"]').children().addClass('shown');
+                app.navEnable();
                 $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
+                    console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
                     }
                     timers = [];
-                }
-                shown++;
-                if (shown <= children.length) {
-                    $(children[shown]).addClass('shown');
-                    if (shown === children.length) {
-                        $('div[data-slide="10"]').children().addClass('shown');
-                        app.navEnable();
-                    }
-
                 }
             }
         },
