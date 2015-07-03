@@ -21,6 +21,7 @@ var App = function App() {
     var shown = 0;
     var timeline = [
         { // 0
+
         },
         { // 1
             fnBeforeShow: function() {
@@ -29,54 +30,7 @@ var App = function App() {
         },
         { // 2
             fnBeforeShow: function() {
-                app.navDisable();
-                $('div[data-slide="2"]').on('click', timeline[2].fnSlideClick);
-            },
-            fnAfterLeave: function() {
-                $('div[data-slide="2"]').off('click', timeline[2].fnSlideClick);
-                $('div[data-slide="2"] > *').removeClass('shown');
-             // used to reset slide to default;
-            },
-            fnAfterShow: function() {
-                // start the timed reveals
-                var children = $('div[data-slide="2"]').children();
-                shown = 0;
-                timers.push(setTimeout(function() {
-                    $(children[0]).addClass('shown');
-                    shown++;
-                }, 0));
-
-                timers.push(setTimeout(function() {
-                    $(children[1]).addClass('shown');
-                    shown++;
-                }, 3000));
-                timers.push(setTimeout(function() {
-                    app.navEnable();
-                    $(children[2]).addClass('shown');
-                    shown++;
-                }, 6000));
-            },
-            fnSlideClick: function() {
-                var children = $('div[data-slide="2"]').children().addClass('shown');
                 app.navEnable();
-                $(children[shown]).addClass('shown');
-                if (timers.length > 0) {
-                    console.log('cancelling timers');
-                    for (var i = 0; i < timers.length; i++) {
-                         window.clearTimeout(timers[i]);
-                    }
-                    timers = [];
-                }
-
-                // shown++;
-                // if (shown <= children.length) {
-                //     $('div[data-slide="2"]').children(':lt('+shown+')').addClass('shown');
-                //     if (shown === children.length) {
-                //         $('div[data-slide="2"]').children().addClass('shown');
-                //         app.navEnable();
-                //     }
-                //
-                // }
             }
         },
         { // 3
@@ -101,16 +55,12 @@ var App = function App() {
                 timers.push(setTimeout(function() {
                     $(children[1]).addClass('shown');
                     shown++;
-                }, 1000));
-                timers.push(setTimeout(function() {
-                    $(children[2]).addClass('shown');
-                    shown++;
-                }, 2000));
+                }, 3000));
                 timers.push(setTimeout(function() {
                     app.navEnable();
-                    $(children[3]).addClass('shown');
+                    $(children[2]).addClass('shown');
                     shown++;
-                }, 3000));
+                }, 6000));
             },
             fnSlideClick: function() {
                 var children = $('div[data-slide="3"]').children().addClass('shown');
@@ -123,55 +73,53 @@ var App = function App() {
                     }
                     timers = [];
                 }
+
+                // shown++;
+                // if (shown <= children.length) {
+                //     $('div[data-slide="2"]').children(':lt('+shown+')').addClass('shown');
+                //     if (shown === children.length) {
+                //         $('div[data-slide="2"]').children().addClass('shown');
+                //         app.navEnable();
+                //     }
+                //
+                // }
             }
         },
         { // 4
             fnBeforeShow: function() {
-                app.navEnable();
-            }
-        },
-        { // 5
-        },
-        { // 6
-        },
-        { // 7
-        },
-        { // 8
-        },
-        { // 9
-            fnBeforeShow: function() {
                 app.navDisable();
-                $('div[data-slide="9"]').on('click', timeline[9].fnSlideClick);
+                $('div[data-slide="4"]').on('click', timeline[4].fnSlideClick);
             },
             fnAfterLeave: function() {
-                $('div[data-slide="9"]').off('click', timeline[9].fnSlideClick);
-                $('div[data-slide="9"] > *').removeClass('shown');
+                $('div[data-slide="4"]').off('click', timeline[4].fnSlideClick);
+                $('div[data-slide="4"] > *').removeClass('shown');
              // used to reset slide to default;
             },
             fnAfterShow: function() {
                 // start the timed reveals
-                var children = $('div[data-slide="9"]').children();
+                var children = $('div[data-slide="4"]').children();
                 shown = 0;
                 timers.push(setTimeout(function() {
                     $(children[0]).addClass('shown');
                     shown++;
                 }, 0));
+
                 timers.push(setTimeout(function() {
                     $(children[1]).addClass('shown');
                     shown++;
-                }, 3000));
+                }, 1000));
                 timers.push(setTimeout(function() {
                     $(children[2]).addClass('shown');
                     shown++;
-                }, 7000));
+                }, 2000));
                 timers.push(setTimeout(function() {
                     app.navEnable();
                     $(children[3]).addClass('shown');
                     shown++;
-                }, 10000));
+                }, 3000));
             },
             fnSlideClick: function() {
-                var children = $('div[data-slide="9"]').children().addClass('shown');
+                var children = $('div[data-slide="4"]').children().addClass('shown');
                 app.navEnable();
                 $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
@@ -182,6 +130,19 @@ var App = function App() {
                     timers = [];
                 }
             }
+        },
+        { // 5
+            fnBeforeShow: function() {
+                app.navEnable();
+            }
+        },
+        { // 6
+        },
+        { // 7
+        },
+        { // 8
+        },
+        { // 9
         },
         { // 10
             fnBeforeShow: function() {
@@ -202,11 +163,18 @@ var App = function App() {
                     shown++;
                 }, 0));
                 timers.push(setTimeout(function() {
-                    app.navEnable();
                     $(children[1]).addClass('shown');
                     shown++;
                 }, 3000));
-
+                timers.push(setTimeout(function() {
+                    $(children[2]).addClass('shown');
+                    shown++;
+                }, 7000));
+                timers.push(setTimeout(function() {
+                    app.navEnable();
+                    $(children[3]).addClass('shown');
+                    shown++;
+                }, 10000));
             },
             fnSlideClick: function() {
                 var children = $('div[data-slide="10"]').children().addClass('shown');
@@ -223,12 +191,50 @@ var App = function App() {
         },
         { // 11
             fnBeforeShow: function() {
+                app.navDisable();
+                $('div[data-slide="11"]').on('click', timeline[11].fnSlideClick);
+            },
+            fnAfterLeave: function() {
+                $('div[data-slide="11"]').off('click', timeline[11].fnSlideClick);
+                $('div[data-slide="11"] > *').removeClass('shown');
+             // used to reset slide to default;
+            },
+            fnAfterShow: function() {
+                // start the timed reveals
+                var children = $('div[data-slide="11"]').children();
+                shown = 0;
+                timers.push(setTimeout(function() {
+                    $(children[0]).addClass('shown');
+                    shown++;
+                }, 0));
+                timers.push(setTimeout(function() {
+                    app.navEnable();
+                    $(children[1]).addClass('shown');
+                    shown++;
+                }, 3000));
+
+            },
+            fnSlideClick: function() {
+                var children = $('div[data-slide="11"]').children().addClass('shown');
                 app.navEnable();
+                $(children[shown]).addClass('shown');
+                if (timers.length > 0) {
+                    console.log('cancelling timers');
+                    for (var i = 0; i < timers.length; i++) {
+                         window.clearTimeout(timers[i]);
+                    }
+                    timers = [];
+                }
             }
         },
         { // 12
+            fnBeforeShow: function() {
+                app.navEnable();
+            }
         },
         { // 13
+        },
+        { // 14
             fnBeforeShow: function() {
                 window.mySwiper.lockSwipeToNext();
                 $('.button-next').addClass('disabled');
@@ -237,7 +243,7 @@ var App = function App() {
                 $('.button-next').removeClass('disabled');
             }
         },
-        { // 14
+        { // 15
             fnBeforeShow: function() {
                 window.plugins.insomnia.keepAwake();
                 app.navDisable();
@@ -246,16 +252,15 @@ var App = function App() {
                 window.plugins.insomnia.allowSleepAgain();
             }
         },
-        { // 15
+        { // 16
             fnBeforeShow: function() {
                 $('.form-submit').removeAttr('disabled');
                 $('.form-submit').html('Submit');
                 app.navDisable();
             }
         },
-        { // 16
+        { // 17
             fnBeforeShow: function() {
-                console.log('before show 16');
                 app.navDisable();
             },
             fnAfterLeave: function() {
@@ -264,18 +269,18 @@ var App = function App() {
                 $('.button-prev').addClass('disabled');
             }
         },
-        { // 17
+        { // 18
             fnAfterLeave: function() {
                 $('.button-prev').removeClass('disabled');
              // used to reset slide to default;
             },
             fnBeforeShow: function() {
-                console.log('before show 17');
+                $('#detailsForm')[0].reset();
                 window.mySwiper.lockSwipeToPrev();
                 $('.button-prev').addClass('disabled');
             }
         },
-        { // 18
+        { // 19
             fnBeforeShow: function() {
                 window.mySwiper.unlockSwipeToPrev();
             }
@@ -321,10 +326,11 @@ var App = function App() {
         window.mySwiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
             loop: false,
-            speed:900,
+            speed:500,
             // Navigation arrows
             nextButton: '.button-next',
             prevButton: '.button-prev',
+            onlyExternal: true,
             onSlideChangeStart : function(e) {
                 // reset shown counter;
                 shown = 0;
@@ -451,6 +457,7 @@ var App = function App() {
         });
 
         $('.restart').on('click', function() {
+            $('#detailsForm')[0].reset();
             app.navEnable();
             window.mySwiper.slideTo(0);
         });
