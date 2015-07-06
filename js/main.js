@@ -326,7 +326,7 @@ var App = function App() {
         window.mySwiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
             loop: false,
-            speed:500,
+            speed:900,
             // Navigation arrows
             nextButton: '.button-next',
             prevButton: '.button-prev',
@@ -498,13 +498,16 @@ var App = function App() {
                 console.log(data);
                 // within the form post callback, advance to next slide
                 app.navEnable();
-                window.mySwiper.slideTo(17);
+                window.mySwiper.slideTo(18);
                 app.navDisable();
             },
             error: function(data){
                 console.log(data);
                 alert('There was an error uploading your data. Please try again.');
-            }
+                $('.form-submit').removeAttr('disabled');
+                $('.form-submit').html('Submit');
+            },
+            timeout: 10000
         });
 
     };
