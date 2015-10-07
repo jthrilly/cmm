@@ -41,28 +41,29 @@ NSString* appDataFolder;
     [self.window makeKeyAndVisible];
     appDataFolder = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByDeletingLastPathComponent];
 
-    // Initialize Server environment variables
+    // Note: the embedded webserver is still needed for iOS 9. It's not needed to load index.html,
+    //       but we need it to ajax-load files (file:// protocol has no origin, leading to CORS issues).
     NSString *directoryPath = myMainViewController.wwwFolderName;
     _webServer = [[GCDWebServer alloc] init];
     _webServerOptions = [NSMutableDictionary dictionary];
-    
+
     // Add GET handler for local "www/" directory
     [_webServer addGETHandlerForBasePath:@"/"
                            directoryPath:directoryPath
                            indexFilename:nil
-                                cacheAge:60
+                                cacheAge:30
                       allowRangeRequests:YES];
-    
+
     [[NSNotificationCenter defaultCenter] postNotificationName:ServerCreatedNotificationName object: @[myMainViewController, _webServer]];
-    
+
     [self addHandlerForPath:@"/Library/"];
     [self addHandlerForPath:@"/Documents/"];
 
     // Initialize Server startup
     if (startWebServer) {
-        [self startServer];
+      [self startServer];
     }
-    
+
     // Update Swizzled ViewController with port currently used by local Server
     [myMainViewController setServerPort:_webServer.port];
 }
@@ -82,7 +83,7 @@ NSString* appDataFolder;
                            return nil;
                        }
                          
-                       return [GCDWebServerFileResponse responseWithFile:fileLocation];
+                       return [GCDWebServerFileResponse responseWithFile:fileLocation byteRange:request.byteRange];
                      }
    ];
 }

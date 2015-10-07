@@ -47,14 +47,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.telerik.plugins.wkwebview": {
-        "source": {
-            "type": "registry",
-            "id": "com.telerik.plugins.wkwebview"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-webserver": {
         "source": {
             "type": "registry",
@@ -84,6 +76,22 @@
             "type": "git",
             "url": "https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git",
             "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.telerik.plugins.wkwebview": {
+        "source": {
+            "type": "registry",
+            "id": "@telerik/cordova-plugin-wkwebview"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.splashscreen"
         },
         "is_top_level": true,
         "variables": {}

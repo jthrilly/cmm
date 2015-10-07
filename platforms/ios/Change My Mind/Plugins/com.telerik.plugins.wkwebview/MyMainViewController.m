@@ -20,6 +20,7 @@
   BOOL _targetExistsLocally;
   NSTimer* _crashRecoveryTimer;
   BOOL _crashRecoveryActive;
+  NSURL *_startURL;
 }
 @end
 
@@ -41,12 +42,13 @@
     self.alreadyLoaded = false;
   }
 
+  if (![self settingForKey:@"DisableLocalStorageSyncWithUIWebView"] || ![[self settingForKey:@"DisableLocalStorageSyncWithUIWebView"] boolValue]) {
   // configure listeners which fires when the application goes away
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(copyLocalStorageToUIWebView:)
                                                name:UIApplicationWillTerminateNotification object:nil];
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(copyLocalStorageToUIWebView:)
                                                name:UIApplicationWillResignActiveNotification object:nil];
-
+  }
 
   // and some more for custom url schemes
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationLaunchedWithUrl:) name:CDVPluginHandleOpenURLNotification object:nil];
@@ -110,9 +112,15 @@
   self.wkWebView = [self newCordovaWKWebViewWithFrame:webViewBounds wkWebViewConfig:config];
   self.wkWebView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 
-  // avoid the white flash while opening the app
   [self.wkWebView setOpaque:NO];
-  self.wkWebView.backgroundColor = [UIColor clearColor];
+  NSString* setting = @"BackgroundColor";
+  if ([self settingForKey:setting]) {
+    self.wkWebView.backgroundColor = [self colorFromHexString:[self settingForKey:setting]];
+    self.view.backgroundColor = self.wkWebView.backgroundColor;
+  } else {
+    self.wkWebView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+  }
 
   _webViewOperationsDelegate = [[CDVWebViewOperationsDelegate alloc] initWithWebView:self.webView];
 
@@ -212,10 +220,10 @@
     self.alreadyLoaded = true;
     // /////////////////
     [CDVUserAgentUtil acquireLock:^(NSInteger lockToken) {
-        _userAgentLockToken = lockToken;
-        [CDVUserAgentUtil setUserAgent:self.userAgent lockToken:lockToken];
-        NSURLRequest* appReq = [NSURLRequest requestWithURL:URL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20.0];
-            [self.wkWebView loadRequest:appReq];
+      _userAgentLockToken = lockToken;
+      [CDVUserAgentUtil setUserAgent:self.userAgent lockToken:lockToken];
+      NSURLRequest* appReq = [NSURLRequest requestWithURL:URL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20.0];
+      [self.wkWebView loadRequest:appReq];
     }];
 }
 
@@ -225,12 +233,11 @@
     // If we already loaded for some reason, we don't care about the local port.
     return;
   } else {
-    NSURL* startURL = [NSURL URLWithString:[NSString stringWithFormat:
+    _startURL = [NSURL URLWithString:[NSString stringWithFormat:
                                             @"http://localhost:%hu/%@",
                                             port,
                                             self.startPage]];
-
-    [self loadURL:startURL];
+    [self loadURL:_startURL];
   }
 }
 
@@ -245,8 +252,12 @@
     appURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", self.wwwFolderName, self.startPage]];
   }
 
-  // // Fix the iOS 5.1 SECURITY_ERR bug (CB-347), this must be before the webView is instantiated ////
+  // iOS9 (runtime) compatibility
+  if (IsAtLeastiOSVersion(@"9.0")) {
+    appURL = _startURL;
+  }
 
+  //// Fix the iOS 5.1 SECURITY_ERR bug (CB-347), this must be before the webView is instantiated ////
   NSString* backupWebStorageType = @"cloud"; // default value
 
   id backupWebStorage = [self settingForKey:@"BackupWebStorage"];
@@ -288,8 +299,6 @@
     [self createGapView:config];
   }
 
-  [self.wkWebView loadRequest: [NSURLRequest requestWithURL:appURL]];
-
   // Configure WebView
   self.wkWebView.navigationDelegate = self;
 
@@ -320,17 +329,19 @@
   }
   self.uiWebViewLS = [cacheFolder stringByAppendingPathComponent:@"file__0.localstorage"];
 
-  // copy the localStorage DB of the old webview to the new one (it's copied back when the app is suspended/shut down)
-  self.wkWebViewLS = [[NSString alloc] initWithString: [appLibraryFolder stringByAppendingPathComponent:@"WebKit"]];
+  if (![self settingForKey:@"DisableLocalStorageSyncWithUIWebView"] || ![[self settingForKey:@"DisableLocalStorageSyncWithUIWebView"] boolValue]) {
+    // copy the localStorage DB of the old webview to the new one (it's copied back when the app is suspended/shut down)
+    self.wkWebViewLS = [[NSString alloc] initWithString: [appLibraryFolder stringByAppendingPathComponent:@"WebKit"]];
 
 #if TARGET_IPHONE_SIMULATOR
-  // the simulutor squeezes the bundle id into the path
-  NSString* bundleIdentifier = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
-  self.wkWebViewLS = [self.wkWebViewLS stringByAppendingPathComponent:bundleIdentifier];
+    // the simulutor squeezes the bundle id into the path
+    NSString* bundleIdentifier = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
+    self.wkWebViewLS = [self.wkWebViewLS stringByAppendingPathComponent:bundleIdentifier];
 #endif
 
-  self.wkWebViewLS = [self.wkWebViewLS stringByAppendingPathComponent:@"WebsiteData/LocalStorage/file__0.localstorage"];
-  [[CDVLocalStorage class] copyFrom:self.uiWebViewLS to:self.wkWebViewLS error:nil];
+    self.wkWebViewLS = [self.wkWebViewLS stringByAppendingPathComponent:@"WebsiteData/LocalStorage/file__0.localstorage"];
+    [[CDVLocalStorage class] copyFrom:self.uiWebViewLS to:self.wkWebViewLS error:nil];
+  }
 
   /*
    * This is for iOS 4.x, where you can allow inline <video> and <audio>, and also autoplay them
@@ -531,8 +542,22 @@
   return cordovaView;
 }
 
-#pragma mark WKNavigationDelegate implementation
 
+/*
+#pragma mark WKNavigationDelegate implementation
+// allow opening links like mailto: / tel:
+- (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures {
+
+  if (!navigationAction.targetFrame.isMainFrame) {
+    [webView loadRequest:navigationAction.request];
+  }
+
+  return nil;
+}
+ */
+
+
+#pragma mark WKNavigationDelegate implementation
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
 {
   // It's safe to release the lock even if this is just a sub-frame that's finished loading.
@@ -577,5 +602,14 @@
   [self.commandQueue  execute:command];
 }
 #endif /* ifdef __IPHONE_8_0 */
+
+#pragma mark Color Utility
+// Assumes input like "0xFF00FF00" (0xAARRGGBB).
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:((rgbValue & 0xFF000000) >> 24)/255.0];
+}
 
 @end

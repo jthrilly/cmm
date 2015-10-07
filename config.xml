@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.thisisunfinished.changmymind" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.thisisunfinished.changmymind" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Change My Mind</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Change my mind app.
     </description>
     <author email="joshmelville@gmail.com" href="http://thisisunfinished.com">
         Joshua Melville
     </author>
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value="1.0" />  
     <preference name="orientation" value="default" />
     <preference name="stay-in-webview" value="false" />
     <preference name="AllowInlineMediaPlayback" value="true" />
@@ -19,13 +23,6 @@
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />

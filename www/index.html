@@ -31,7 +31,7 @@
             <div class="swiper-slide" data-slide="1">
                 <div class="row text-center">
                     <div class="col-sm-12">
-                        <h2>Make sure you have a pen and paper nearby, incase you want to record your responses.</h2>
+                        <h2>Before you start, you might want a pen and paper nearby, incase you want to record your responses.</h2>
                     </div>
                 </div>
             </div>
@@ -178,6 +178,12 @@
                         <button class="btn btn-primary fake-record">Record</button>
                     </div>
                 </div>
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        <br/>
+                        <p class="privacy-text">(What will happen to my recording?)</p>
+                    </div>
+                </div>
             </div>
             <div class="swiper-slide" data-slide="15">
                 <div class="confirm-panel">
@@ -299,8 +305,26 @@
         <div class="nav swiper-button-disabled pull-left button-prev"><i class="fa fa-angle-left"></i> Back</div>
         <div class="nav swiper-button-disabled text-right pull-right button-next">Forwards <i class="fa fa-angle-right"></i></div>
     </div>
+    <div class="privacy-panel">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>What will happen to my recording?</h4>
+
+                <p>Your recording will be stored on your device while you are using the Change My Mind app. If you choose not to send it to someone, it will be deleted immediately.</p>
+
+                <p>If you send it to someone to receive a task, it will be uploaded to our server and an email will be sent to your recipient asking them to listen to it.</p>
+
+                <p>Once they have sent you a task, the recording will be deleted. If no task has been set after 30 days, the recording will be deleted from our server automatically.</p>
+
+                <p>At no time will your recording be accessible to anyone other than the person you send it to.</p>
+                <br>
+                <button class="btn btn-primary btn-block privacy-ok">Okay</button>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/main-min.js"></script>
+    <script type="text/javascript" src="js/_bower.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
     <script>
 // $(document).ready(function () {
     var app = new App();

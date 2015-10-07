@@ -67,22 +67,11 @@ var App = function App() {
                 app.navEnable();
                 $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
-                    console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
                     }
                     timers = [];
                 }
-
-                // shown++;
-                // if (shown <= children.length) {
-                //     $('div[data-slide="2"]').children(':lt('+shown+')').addClass('shown');
-                //     if (shown === children.length) {
-                //         $('div[data-slide="2"]').children().addClass('shown');
-                //         app.navEnable();
-                //     }
-                //
-                // }
             }
         },
         { // 4
@@ -123,7 +112,6 @@ var App = function App() {
                 app.navEnable();
                 $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
-                    console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
                     }
@@ -181,7 +169,6 @@ var App = function App() {
                 app.navEnable();
                 $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
-                    console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
                     }
@@ -219,7 +206,6 @@ var App = function App() {
                 app.navEnable();
                 $(children[shown]).addClass('shown');
                 if (timers.length > 0) {
-                    console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
                     }
@@ -335,15 +321,14 @@ var App = function App() {
                 // reset shown counter;
                 shown = 0;
                 if (timers.length > 0) {
-                    console.log('cancelling timers');
                     for (var i = 0; i < timers.length; i++) {
                          window.clearTimeout(timers[i]);
                     }
                     timers = [];
                 }
                 var index = window.mySwiper.activeIndex;
-                // console.log('Start '+window.mySwiper.activeIndex);
-                // console.log('Pre '+window.mySwiper.previousIndex);
+
+
                 if (typeof timeline[index] !== 'undefined' && typeof timeline[index].fnBeforeShow !== 'undefined') {
                     timeline[index].fnBeforeShow();
                 }
@@ -351,8 +336,8 @@ var App = function App() {
             onSlideChangeEnd : function() {
                 // window.mySwiper.lockSwipes();
                 var index = window.mySwiper.activeIndex;
-                // console.log('End '+index);
-                // console.log('Pre '+window.mySwiper.previousIndex);
+
+
 
                 if (typeof timeline[index] !== 'undefined' && typeof timeline[index].fnAfterShow !== 'undefined') {
                     timeline[index].fnAfterShow();
@@ -489,20 +474,17 @@ var App = function App() {
             uuid = uploadResponse.uuid;
         }
         postData += "&uuid=" + encodeURIComponent(uuid);
-        console.log(postData);
         $.ajax({
             type: 'POST',
             data: postData,
             url: appBaseURL+'form.php',
             success: function(data){
-                console.log(data);
                 // within the form post callback, advance to next slide
                 app.navEnable();
                 window.mySwiper.slideTo(18);
                 app.navDisable();
             },
             error: function(data){
-                console.log(data);
                 alert('There was an error uploading your data. Please try again.');
                 $('.form-submit').removeAttr('disabled');
                 $('.form-submit').html('Submit');
@@ -513,11 +495,22 @@ var App = function App() {
     };
     app.bindEvents = function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+
+        $('.privacy-text').on('click', function() {
+            $('.privacy-panel').addClass('show');
+        });
+        $('.privacy-ok').on('click', function() {
+            $('.privacy-panel').removeClass('show');
+        });
+
     };
     app.onDeviceReady = function() {
         // apparently, these should be done when the device is ready
         // document.addEventListener('offline', this.onDeviceOffline, false);
         // document.addEventListener('online', this.onDeviceOnline, false);
+
+        navigator.splashscreen.hide();
+
         document.addEventListener("resume", function() {
             setTimeout(function(){
                 // trying to fix video stalling when app is reopened
@@ -649,10 +642,6 @@ var App = function App() {
         uploadFinished = true;
         uploadResponse = JSON.parse(r.response);
         $('.upload-panel').removeClass('show');
-        // console.log("Code = " + r.responseCode);
-        // alert(uploadResponse.uuid);
-        // alert(uploadResponse);
-        // console.log("Sent = " + r.bytesSent);
         if (formFinished) {
             app.dataFinished();
         }

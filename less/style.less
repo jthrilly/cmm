@@ -2,7 +2,6 @@
 @import '../bower_components/fontawesome/less/font-awesome.less';
 @import 'variables.less'; /* Your site specific LESS variables - these override BS defaults  */
 @import (inline) '../bower_components/swiper/dist/css/swiper.min.css';
-@import (inline) '../bower_components/animate.css/animate.min.css';
 
 @fa-font-path:        "../fonts";
 
@@ -163,6 +162,24 @@ div[data-slide="11"] > .shown {
 .progress {
 	width:80vmin;
 	height:3vmin;
+}
+
+.privacy-panel {
+	background:black;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	z-index:9999;
+	transition: all 0.5s ease-in-out;
+	transform: translateY(-100vh);
+	display:flex !important;
+	flex-direction:column;
+  	justify-content: center;
+}
+
+.privacy-panel.show {
+	transform: translateY(0);
 }
 
 .confirm-panel {
