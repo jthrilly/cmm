@@ -16,6 +16,7 @@ var App = function App() {
     var uploadResponse = {};
     var formFinished = false;
     var paused = false;
+    var noPermissions = false;
     var currentSlide = 0;
     var timers = [];
     var shown = 0;
@@ -354,10 +355,15 @@ var App = function App() {
 
         // Button event handlers
         $('.fake-record').on('click', function() {
-            app.navEnable();
-            window.mySwiper.slideNext();
-            app.navDisable();
-            $('.record').trigger('click');
+            if (noPermissions === false) {
+                app.navEnable();
+                window.mySwiper.slideNext();
+                app.navDisable();
+                $('.record').trigger('click');
+            } else {
+                app.permissionError();
+            }
+
         });
 
         $('.record').on('click', function() {
@@ -461,6 +467,15 @@ var App = function App() {
             app.nextSlide();
         });
     };
+
+    app.permissionError = function() {
+
+        app.navEnable();
+        mySwiper.slideTo(14);
+        app.navEnable();
+        alert('Microphone Permission Required \n This app needs to have access to your microphone for the next step. To grant access, open settings and click on "Change My Mind".');
+    };
+
     app.dataFinished = function() {
         //show loader
         $('.form-submit').html('<i class="fa fa-spinner fa-pulse"></i> Submit');
@@ -499,18 +514,12 @@ var App = function App() {
         $('.privacy-text').on('click', function() {
             $('.privacy-panel').addClass('show');
         });
-        $('.privacy-ok').on('click', function() {
-            $('.privacy-panel').removeClass('show');
-        });
-
     };
+
     app.onDeviceReady = function() {
         // apparently, these should be done when the device is ready
         // document.addEventListener('offline', this.onDeviceOffline, false);
         // document.addEventListener('online', this.onDeviceOnline, false);
-
-        navigator.splashscreen.hide();
-
         document.addEventListener("resume", function() {
             setTimeout(function(){
                 // trying to fix video stalling when app is reopened
@@ -597,11 +606,17 @@ var App = function App() {
         }, 1000);
     };
     app.recordSuccess = function() {
+        noPermissions = false;
         // alert("Success!");
     };
     app.error = function(error) {
-        alert('code: '    + error.code    + '\n' +
-              'message: ' + error.message + '\n');
+        if (error.code === 1) {
+            noPermissions = true;
+            app.permissionError();
+        }
+
+        // alert('code: '    + error.code    + '\n' +
+        //       'message: ' + error.message + '\n');
     };
     app.setAudioPosition = function(position) {
         var time = moment().startOf('day').seconds(position).format('mm:ss');
